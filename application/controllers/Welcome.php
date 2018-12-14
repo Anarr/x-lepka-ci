@@ -66,6 +66,20 @@ class Welcome extends CI_Controller
         $this->load->view('dashboard/pages/contact_view', $context);
 	}
 	
+	public function category($categoryId)
+	{
+        $context = array();
+        $categories = $this->category->getCategories();
+        $products = $this->category->getProductsByCategoryId($categoryId);
+        
+        
+        $context = array(
+            'categories' => $categories,
+            'products' => $products
+        );
+        $this->load->view('dashboard/pages/category_view', $context);
+    
+    }
 	public function products($productId)
 	{
         $categories = $this->category->getCategories();
