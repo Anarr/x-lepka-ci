@@ -8,6 +8,7 @@ class Welcome extends CI_Controller
     {
         parent::__construct();
         $this->load->helper('url');
+        $this->load->helper('form');
         $this->load->model('category');
         $this->load->model('page');
 		$this->load->model('product');
@@ -57,6 +58,28 @@ class Welcome extends CI_Controller
 
     public function contact()
     {
+        // Load dependencies
+        $this->load->model('contact');
+        $this->load->library('form_validation');
+        // Set form validation rules
+        $this->form_validation->set_rules('name', 'name', 'required');
+        $this->form_validation->set_rules('phone', 'phone', 'required');
+        $this->form_validation->set_rules('message', 'message', 'required|min_length[20]');
+
+        if ($this->form_validation->run()) {
+            $data = array(
+                'name' => $this->input->post('name'),
+                'phone' => $this->input->post('phone'),
+                'message' => $this->input->post('message')
+            );
+            $messageId = $this->contact->send($data);
+            if ($messageId) {
+                redirect('/contact');
+            } else {
+                exit('Error occured');
+            }
+        }
+
         $categories = $this->category->getCategories();
         $pageData = current($this->page->getPageBySlug('contact'));
         $context = array(
@@ -81,5 +104,10 @@ class Welcome extends CI_Controller
         );
 
         $this->load->view('dashboard/pages/product_view', $context);
-	}
+    }
+    
+    public function error404()
+    {
+        $this->load->view('dashboard/pages/error404_view');
+    }
 }
