@@ -64,27 +64,27 @@
                             </div>
 
                         </div>
-                    </div>
-                    <div class="right">
+                        <div class="right">
                             <div class="col-sm-12">
                                 <div class="well">
                                     <h3></h3>
                                     <p><strong></strong></p>
-                                    <form action="http://masalmebel.az/index.php?route=account/login" method="post"
+                                    <?php echo validation_errors(); ?>
+                                    <form action="" method="post"
                                         enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label class="control-label" for="input-email">Adiniz</label>
-                                            <input type="text" name="name" value="" placeholder="E-mail ünvanı" id="input-email"
-                                                class="form-control">
+                                            <input type="text" name="name"placeholder="Adınız" id="input-email"
+                                                class="form-control" value="<?php echo set_value('name'); ?>">
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="input-password">Nomre</label>
-                                            <input type="password" name="number" value="" placeholder="Şifrə" id="input-password" class="form-control">
+                                            <input type="tel    " name="phone" value="<?php echo set_value('phone'); ?>" placeholder="Nomre" id="input-password" class="form-control">
                                         </div>
                                         <div class="form-group">
                                             <label class="control-label" for="input-email">Messajiniz</label>
-                                            <textarea type="text" name="message" value="" placeholder="E-mail ünvanı" id="input-email"
-                                                class="form-control"></textarea>
+                                            <textarea type="text" name="message" value="" placeholder="Mesajiniz" id="input-email"
+                                                class="form-control"><?php echo set_value('message'); ?></textarea>
                                         </div>
                                         <input type="submit" value="Gonder" class="btn btn-primary">
                                         <input type="hidden" name="redirect" value="http://masalmebel.az/index.php?route=account/order">
@@ -93,6 +93,8 @@
                             </div>
                         </div>
                 </div>
+                    </div>
+
             </div>
         </div>
     </div>

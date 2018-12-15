@@ -66,15 +66,6 @@
             <div class="row">
                 <p class="powered">2018 &copy; <a href="https://webline.az/" target="_blank">Created By webline.az</a></p>
                 <div class="footerbottom-cms">
-                    {# <div class="payment-cms">
-                        <ul class="payment">
-                            <li class="visa"><a href="#"></a></li>
-                            <li class="paypal"><a href="#"></a></li>
-                            <li class="mastercard"><a href="#"></a></li>
-                            <li class="discover"><a href="#"></a></li>
-                            <li class="americanexpress"><a href="#"></a></li>
-                        </ul>
-                    </div> #}
                 </div>
             </div>
         </div>
