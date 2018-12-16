@@ -37,7 +37,7 @@
 
                             <div class="image">
                                 <a href="">
-                                    <img src="/<?=base_url()?>uploads/products/<?=$obj->photo?>"
+                                    <img src="<?=base_url()?>ci/uploads/products/<?=$obj->photo?>"
                                         title="Mətbəx mebeli" alt="<?=$obj->title?>" class="img-responsive"></a>
 
 
