@@ -6,24 +6,44 @@
         <div class="col-sm-3">
             <?php $this->load->view('dashboard/components/left_menu_view');?>                    
         </div>
+        <?php
+            $category_name = '';
+            $noProducts = false;
+            if (count($products)>0) {
+                $category_id = $products[0]->category_id;
+                $category_name;
+
+                foreach ($categories as $key => $obj) {
+                    if ($category_id == $obj->id) {
+                        $category_name = $obj->name;
+                    }
+                }
+            } else {
+                $noProducts = true;
+
+            }
+        ?>
         <div id="" class="col-sm-9">
             <ul class="breadcrumb">
-                <li><a href="http://masalmebel.az/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
-                <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=88">Mətbəx mebeli</a></li>
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><?=$category_name?></a></li>
             </ul>
-            <h2 class="page-title">Mətbəx mebeli</h2>
+            <h2 class="page-title"><?=$category_name?></h2>
 
             <div class="category_filter">
-                <div class="col-md-4 btn-list-grid">
+                <!-- <div class="col-md-4 btn-list-grid">
                     <div class="btn-group">
                         <button type="button" id="grid-view" class="btn btn-default grid active" data-toggle="tooltip"
                             title="" data-original-title="Cədvəl"><i class="fa fa-th"></i></button>
                         <button type="button" id="list-view" class="btn btn-default list" data-toggle="tooltip" title=""
                             data-original-title="Siyahı"><i class="fa fa-th-list"></i></button>
                     </div>
-                </div>
+                </div> -->
 
             </div>
+            <?php if ($noProducts == true) {?>
+                <h1>Mehsul Tapilmadi!</h1>
+            <?php } if (!$noProducts){ ?>
             <div class="row cat_prod">
                 <?php 
                     foreach ($products as $key => $obj) {
@@ -38,7 +58,7 @@
                             <div class="image">
                                 <a href="">
                                     <img src="<?=base_url()?>ci/uploads/products/<?=$obj->photo?>"
-                                        title="Mətbəx mebeli" alt="<?=$obj->title?>" class="img-responsive"></a>
+                                        title=" $category_name" alt="<?=$obj->title?>" class="img-responsive"></a>
 
 
                             </div>
@@ -73,7 +93,7 @@
                                         0 <span class="manat">M</span> </p>
 
 
-                                    <div class="button-group">
+                                    <!-- <div class="button-group">
                                         <button type="button" class="addtocart" onclick="cart.add('295', '1');"><i
                                                 class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Səbətə
                                                 at</span></button>
@@ -84,7 +104,7 @@
                                         <div class="quickview-button" data-toggle="tooltip" title=""
                                             data-original-title="quick_view"> <a class="quickbox" href="http://masalmebel.az/index.php?route=product/quick_view&amp;product_id=295"><i
                                                     class="fa fa-eye" aria-hidden="true"></i></a></div>
-                                    </div>
+                                    </div> -->
 
                                 </div>
                             </div>
@@ -93,20 +113,21 @@
                 </div>
                     <?php }?>
             </div>
+            <?php }?>
+            <?php if (!$noProducts) {?>
+
             <div class="pagination-wrapper">
                 <div class="col-sm-6 text-left page-link">
                     <ul class="pagination">
                         <li class="active"><span>1</span></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=2">2</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=3">3</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=4">4</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=5">5</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=2">&gt;</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=97&amp;page=5">&gt;|</a></li>
+                        <li><a href="2">&gt;</a></li>
+                        <li><a href="5">&gt;|</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-6 text-right page-result">Göstərilir: 1 . 11 -ə 11 -dən (1 səhifə)</div>
             </div>
+            <?php } ?>
+
         </div>
     </div>
 </div>
