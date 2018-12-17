@@ -96,10 +96,10 @@
                             </div>
                             <div class="head-right-top">
                                 <ul class="static_links">
-                                    <li class="head-links"> <a href="/">Baş səhifə</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>category/1">Meshullar</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>about">Haqqimizda</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>contact">Əlaqə</a></li>
+                                    <li class="head-links"> <a href="/ci">Baş səhifə</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/category/1">Meshullar</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/about">Haqqimizda</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                                 </ul>
                             </div>
                         </div>
