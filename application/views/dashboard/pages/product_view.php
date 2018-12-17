@@ -8,8 +8,8 @@
         </div>
         <div id="" class="productpage col-sm-9">
             <ul class="breadcrumb">
-                <li><a href="http://masalmebel.az/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
-                <li><a href="http://masalmebel.az/index.php?route=product/product&amp;product_id=422">Məhsullar</a></li>
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                <li><a href="#">Məhsullar</a></li>
             </ul>
             <h2 class="page-title"><?=$productData->title;?></h2>
             <div class="row">
@@ -46,6 +46,23 @@
                             <h3 class="product-price"><?=$productData->price;?> <span class="manat">M</span></h3>
                         </li>
                     </ul>
+
+                    <form action="" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label class="control-label" for="input-email">Adiniz</label>
+                            <input type="text" name="name" placeholder="Adınız" id="input-email" class="form-control" value="">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="input-password">Nomre</label>
+                            <input type="tel    " name="phone" value="" placeholder="Nomre" id="input-password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label" for="input-email">Messajiniz</label>
+                            <textarea type="text" name="message" value="" placeholder="Mesajiniz" id="input-email" class="form-control"></textarea>
+                        </div>
+                        <input type="submit" value="Sifariş ver" class="btn btn-primary">
+                        <input type="hidden" name="redirect" value="">
+                    </form>
 
 
                     <script type="text/javascript" src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>

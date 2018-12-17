@@ -13,7 +13,7 @@
                                 <div class="contact_phone"><a href="tel:+994123445700">+994 (12) 563-52-46</a></div>
                             </div>
                             <div class="email">
-                                <a target="_blank" href="mailto:info@masalmebel.az"></a>
+                                <a target="_blank" href="mailto:xudaferin.lepka@mail.ru"></a>
                             </div>
                         </li>
                         <li>
@@ -44,7 +44,7 @@
                         <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3 column">
+                <!-- <div class="col-sm-3 column">
                     <h5>Hesabım</h5>
                     <ul class="list-unstyled">
                         <li><a href="#">Hesabım</a></li>
@@ -52,7 +52,7 @@
                         <li><a href="#">Arzu siyahısı</a></li>
                         <li><a href="#">Geri qaytarma</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="content_footer_bottom">
                 <div class="manufacture_block">

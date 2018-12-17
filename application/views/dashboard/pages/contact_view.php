@@ -13,8 +13,8 @@
         </aside>
         <div id="content" class="col-sm-9">
             <ul class="breadcrumb">
-                <li><a href="http://masalmebel.az/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
-                <li><a href="http://masalmebel.az/index.php?route=information/information&amp;information_id=7"><?=$pageData->title;?></a></li>
+                <li><a href="/"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><?=$pageData->title;?></a></li>
             </ul>
             <h1 class="page-title"><?=$pageData->title;?></h1>
             <div class="panel panel-default information-contact">
@@ -87,7 +87,7 @@
                                                 class="form-control"><?php echo set_value('message'); ?></textarea>
                                         </div>
                                         <input type="submit" value="Gonder" class="btn btn-primary">
-                                        <input type="hidden" name="redirect" value="http://masalmebel.az/index.php?route=account/order">
+                                        <input type="hidden" name="redirect" value="#">
                                     </form>
                                 </div>
                             </div>
