@@ -23,7 +23,7 @@
                         <div class="left product-image thumbnails">
 
                             <!-- Megnor Cloud-Zoom Image Effect Start -->
-                            <div class="image"><a class="thumbnail elevatezoom-gallery" href="/image/catalog/belarusiya_yeni/Prestij 2.jpg"><img
+                            <div class="image"><a class="thumbnail elevatezoom-gallery" href="<?=base_url().'ci/uploads/products/'.$productData->photo;?>"><img
                                         id="tmzoom" src="<?=base_url().'ci/uploads/products/'.$productData->photo;?>"
                                         data-zoom-image="/image/catalog/belarusiya_yeni/Prestij 2.jpg" title="Prestij2"
                                         alt="Prestij2"></a></div>

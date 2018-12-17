@@ -56,7 +56,7 @@
                         <div class="product-block-inner">
 
                             <div class="image">
-                                <a href="/products/<?=$obj->id?>">
+                                <a href="/ci/products/<?=$obj->id?>">
                                     <img src="<?=base_url()?>ci/uploads/products/<?=$obj->photo?>"
                                         title=" $category_name" alt="<?=$obj->title?>" class="img-responsive"></a>
 
@@ -76,7 +76,7 @@
                                     </div> -->
 
                                     <h4>
-                                        <a href="/products/<?=$obj->id?>">
+                                        <a href="/ci/products/<?=$obj->id?>">
                                         <?=$obj->title?>
                                         </a>
                                     </h4>
@@ -114,7 +114,7 @@
                     <?php }?>
             </div>
             <?php }?>
-            <?php if (!$noProducts) {?>
+            <?php if (!$noProducts && count($products) > 100):?>
 
             <div class="pagination-wrapper">
                 <div class="col-sm-6 text-left page-link">
@@ -126,7 +126,7 @@
                 </div>
                 <div class="col-sm-6 text-right page-result">Göstərilir: 1 . 11 -ə 11 -dən (1 səhifə)</div>
             </div>
-            <?php } ?>
+            <?php endif; ?>
 
         </div>
     </div>
