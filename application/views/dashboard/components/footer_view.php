@@ -64,7 +64,6 @@
     <div class="bottomfooter">
         <div class="container">
             <div class="row">
-                <p class="powered">2018 &copy; <a href="https://webline.az/" target="_blank">Created By webline.az</a></p>
                 <div class="footerbottom-cms">
                 </div>
             </div>
