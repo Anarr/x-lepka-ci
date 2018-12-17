@@ -150,6 +150,8 @@ div.required .control-label:before {
     right: 0;
     left: auto;
 }
+
+
 #form-language .dropdown-menu {
     right: 0;
     left: auto;
@@ -8025,5 +8027,13 @@ li {
 }
 .checkout-success p a {
     color: #FF7A5F;
+}
+.product-thumb .image img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
 }
 /* Megnor www.templatemela.com End */

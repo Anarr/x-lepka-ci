@@ -6,7 +6,7 @@
             <?php $this->load->view('dashboard/components/left_menu_view');?>
             </div>
             <div class="col-md-9">
-                <div class="main-slider" style="background: url('<?= 'assets/img/korpu.jpg';?>');background-repeat: no-repeat;background-position: right;">
+                <div class="main-slider" style="background: url('<?= base_url().'assets/img/korpu.jpg';?>');background-repeat: no-repeat;background-position: right;">
                 </div>
             </div>
             <script type="text/javascript">
