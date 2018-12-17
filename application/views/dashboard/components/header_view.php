@@ -97,9 +97,9 @@
                             <div class="head-right-top">
                                 <ul class="static_links">
                                     <li class="head-links"> <a href="">Baş səhifə</a></li>
-                                    <li class="head-links"><a href="products">Meshullar</a></li>
-                                    <li class="head-links"><a href="about">Haqqimizda</a></li>
-                                    <li class="head-links"><a href="contact">Əlaqə</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/products">Meshullar</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/about">Haqqimizda</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,7 +110,7 @@
         <nav class="nav-container" role="navigation">
             <div class="nav-inner container">
                 <!-- ======= Menu Code START ========= -->
-                <div class="box-category-heading">Categories<i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                <div class="box-category-heading">Kateqoriyalar<i class="fa fa-angle-down" aria-hidden="true"></i></div>
                 <div class="col-sm-5 header-search">
                     <script type="text/javascript">
                         /* Search */

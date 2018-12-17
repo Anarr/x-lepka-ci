@@ -30,27 +30,27 @@
                 <div id="info" class="col-sm-3 column">
                     <h5>Məlumat</h5>
                     <ul class="list-unstyled">
-                        <li><a href="http://masalmebel.az/index.php?route=information/information&amp;information_id=4">Haqqımızda</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=information/information&amp;information_id=6">Əlaqə</a></li>
+                        <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
+                        <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                     </ul>
                 </div>
                 <div id="extra-link" class="col-sm-3 column">
                     <h5>Əlavələr</h5>
                     <ul class="list-unstyled">
-                        <li><a href="http://masalmebel.az/index.php?route=product/manufacturer">Brendlər</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=affiliate/account">Ortaqlıq</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=product/special">Endirimlər</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=account/newsletter">Xəbər bülleteni</a></li>
-                        <li><a href="/contacts">Əlaqə</a></li>
+                        <li><a href="#">Brendlər</a></li>
+                        <li><a href="#">Ortaqlıq</a></li>
+                        <li><a href="#">Endirimlər</a></li>
+                        <li><a href="#">Xəbər bülleteni</a></li>
+                        <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3 column">
                     <h5>Hesabım</h5>
                     <ul class="list-unstyled">
-                        <li><a href="http://masalmebel.az/index.php?route=account/account">Hesabım</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=account/order">Sifariş tarixçəsi</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=account/wishlist">Arzu siyahısı</a></li>
-                        <li><a href="http://masalmebel.az/index.php?route=account/return/add">Geri qaytarma</a></li>
+                        <li><a href="#">Hesabım</a></li>
+                        <li><a href="#">Sifariş tarixçəsi</a></li>
+                        <li><a href="#">Arzu siyahısı</a></li>
+                        <li><a href="#">Geri qaytarma</a></li>
                     </ul>
                 </div>
             </div>
