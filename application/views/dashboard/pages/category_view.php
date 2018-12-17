@@ -47,9 +47,9 @@
             <div class="row cat_prod">
                 <?php 
                     foreach ($products as $key => $obj) {
-                        echo '<pre>';
-                        var_dump($obj);
-                        echo '</pre>';
+                        // echo '<pre>';
+                        // var_dump($obj);
+                        // echo '</pre>';
                 ?>
                 <div class="product-layout product-grid col-lg-3 col-md-4 col-sm-4 col-xs-6">
                     <div class="product-block product-thumb">
