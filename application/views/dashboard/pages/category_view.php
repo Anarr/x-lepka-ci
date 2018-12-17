@@ -57,7 +57,7 @@
 
                             <div class="image">
                                 <a href="/ci/products/<?=$obj->id?>">
-                                    <img src="<?=base_url()?>uploads/products/<?=$obj->photo?>"
+                                    <img src="<?=base_url()?>ci/uploads/products/<?=$obj->photo?>"
                                         title=" $category_name" alt="<?=$obj->title?>" class="img-responsive"></a>
 
 
