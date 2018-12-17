@@ -47,9 +47,9 @@
             <div class="row cat_prod">
                 <?php 
                     foreach ($products as $key => $obj) {
-                        // echo '<pre>';
-                        // var_dump($obj);
-                        // echo '</pre>';
+                        echo '<pre>';
+                        var_dump($obj);
+                        echo '</pre>';
                 ?>
                 <div class="product-layout product-grid col-lg-3 col-md-4 col-sm-4 col-xs-6">
                     <div class="product-block product-thumb">
@@ -67,30 +67,30 @@
 
 
                                 <div class="caption">
-                                    <div class="rating">
+                                    <!-- <div class="rating">
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                    </div>
+                                    </div> -->
 
                                     <h4>
                                         <a href="/products/<?=$obj->id?>">
                                         <?=$obj->title?>
                                         </a>
                                     </h4>
-                                    <div class="rating list-rate">
+                                    <!-- <div class="rating list-rate">
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
                                         <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                    </div>
+                                    </div> -->
                                     <p class="desc">..</p>
 
                                     <p class="price">
-                                        0 <span class="manat">M</span> </p>
+                                        <?=$obj->price?> <span class="manat">M</span> </p>
 
 
                                     <!-- <div class="button-group">
