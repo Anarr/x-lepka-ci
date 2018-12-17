@@ -56,7 +56,7 @@
                         <div class="product-block-inner">
 
                             <div class="image">
-                                <a href="">
+                                <a href="/products/<?=$obj->id?>">
                                     <img src="<?=base_url()?>ci/uploads/products/<?=$obj->photo?>"
                                         title=" $category_name" alt="<?=$obj->title?>" class="img-responsive"></a>
 
@@ -76,7 +76,7 @@
                                     </div>
 
                                     <h4>
-                                        <a href="">
+                                        <a href="/products/<?=$obj->id?>">
                                         <?=$obj->title?>
                                         </a>
                                     </h4>
