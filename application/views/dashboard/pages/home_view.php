@@ -57,7 +57,7 @@
             </div>
             <div class="box featured">
                     <ul class="breadcrumb">
-                        <li><a href="http://masalmebel.az/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
+                        <li><a href="/"><i class="fa fa-home"></i></a></li>
                         <li><a href="#">Məhsullar</a></li>
                     </ul>
                     <h2 class="page-title">Məhsullar</h2>
@@ -80,42 +80,16 @@
 
 
                                         <div class="caption">
-                                            <div class="rating">
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                            </div>
-
+                                            
                                             <h4><a href="<?=base_url().'ci/products/'.$product->id;?>"><?=$product->title;?></a></h4>
-                                            <div class="rating list-rate">
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                                <span class="fa fa-stack"><i class="fa fa-star off fa-stack-2x"></i></span>
-                                            </div>
+                                            
                                             <p class="desc"><?=$product->description;?></p>
 
-                                            <p class="price">
+                                            <p class="price" style="opacity:1 !important;">
                                             <?=$product->price;?> <span class="manat">M</span> </p>
 
 
-                                            <div class="button-group">
-                                                <button type="button" class="addtocart" onclick="cart.add('112', '1');"><i
-                                                        class="fa fa-shopping-cart"></i><span class="hidden-xs hidden-sm hidden-md">Səbətə
-                                                        at</span></button>
-                                                <button type="button" class="wishlist" data-toggle="tooltip" title=""
-                                                    onclick="wishlist.add('112');" data-original-title="Arzu siyahısına əlavə et"><i
-                                                        class="fa fa-heart"></i></button>
-                                                <button type="button" class="compare" data-toggle="tooltip" title=""
-                                                    onclick="compare.add('112');" data-original-title="Müqayisə et"><i
-                                                        class="fa fa-exchange"></i></button>
-                                                <div class="quickview-button" data-toggle="tooltip" title=""
-                                                    data-original-title="quick_view"> <a class="quickbox" href="http://masalmebel.az/index.php?route=product/quick_view&amp;product_id=112"><i
-                                                            class="fa fa-eye" aria-hidden="true"></i></a></div>
-                                            </div>
+                                            
 
                                         </div>
                                     </div>
@@ -125,18 +99,7 @@
 
                         </div>
                     <?php endforeach;?>
-                        
-                    <!-- <div class="pagination-wrapper">
-                        <div class="col-sm-6 text-left page-link">
-                            <ul class="pagination">
-                                <li class="active"><span>1</span></li>
-                                <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=87&amp;page=2">2</a></li>
-                                <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=87&amp;page=2">&gt;</a></li>
-                                <li><a href="http://masalmebel.az/index.php?route=product/category&amp;path=87&amp;page=2">&gt;|</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 text-right page-result">Göstərilir: 1 . 15 -ə 20 -dən (2 səhifə)</div>
-                    </div> -->
+                    
             </div>
             <span class="featured_default_width" style="display:none; visibility:hidden"></span>
             <span class="module_default_width" style="display:none; visibility:hidden"></span>
