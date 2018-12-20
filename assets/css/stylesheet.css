@@ -262,7 +262,7 @@ header .btn-link:focus,
     margin-right: 5px;
 }
 #top-links ul.list-inline li {
-    background: url(../image/megnor/pipe.gif) no-repeat scroll right center transparent;
+    background: url(../img/pipe.gif) no-repeat scroll right center transparent;
     padding: 0 15px 0 8px;
     font-weight: 300
 }
@@ -272,7 +272,7 @@ header .btn-link:focus,
 }
 #form-language,
 #form-currency {
-    background: url(../image/megnor/pipe.gif) no-repeat scroll right center transparent;
+    background: url(../img/pipe.gif) no-repeat scroll right center transparent;
     padding: 0 7px 0 0px;
     margin-right: 8px;
 }
@@ -344,8 +344,8 @@ header {
     z-index: 99;
     margin-bottom: 20px;
     position: relative;
-    /* background: #f2f2f2; */
-    background-color: #fff;
+    background: #f2f2f2;
+    /* background-color: #fff; */
     border-bottom: 1px solid #f2f2f2;
 }
 .col-sm-4.header-logo {
@@ -422,7 +422,7 @@ header {
     /*width:auto;*/
     width: 512px;
     border-left: none;
-    background: #fff url("../image/megnor/search-pipe.jpg") no-repeat scroll left center;
+    background: #fff url("../img/search-pipe.jpg") no-repeat scroll left center;
     text-transform: capitalize;
     color: #000;
     border-radius: 0;
@@ -546,7 +546,7 @@ header .dropdown.myaccount a:focus .fa {
 }
 .header-logo img {
     /* width: 100%; */
-    width: 100px;
+    width: 160px;
 }
 .hed-right-top {
     position: relative;
@@ -634,7 +634,7 @@ header .dropdown.myaccount a:focus .fa {
     float: right;
 }
 #cart > .btn {
-    background: #fff url("../image/megnor/cart.png") no-repeat scroll 15px 8px;
+    background: #fff url("../img/cart.png") no-repeat scroll 15px 8px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -652,7 +652,7 @@ header .dropdown.myaccount a:focus .fa {
 }
 #cart > .btn:hover,
 #cart.active > .btn {
-    background: #fff url("../image/megnor/cart-hover.png") no-repeat scroll 15px 8px;
+    background: #fff url("../img/cart-hover.png") no-repeat scroll 15px 8px;
     color: #FF7A5F;
     transition: none;
     -webkit-transition: none;
@@ -1369,7 +1369,7 @@ footer a {
     font-weight: normal;
     line-height: 30px;
     padding-left: 17px;
-    background: url(../image/megnor/footer-arrow.png) no-repeat scroll 0 8px transparent;
+    background: url(../img/footer-arrow.png) no-repeat scroll 0 8px transparent;
 }
 #footer .column li a:hover,
 #footer .column li a:focus {
@@ -1383,7 +1383,7 @@ footer a:focus {
 .newsletter h5.news-title {
     font-size: 23px;
     color: #FFFFFF;
-    background: url(../image/megnor/envelope.png) no-repeat scroll left center transparent;
+    background: url(../img/envelope.png) no-repeat scroll left center transparent;
     padding: 35px 0 34px 88px;
     float: left;
     margin: 0;
@@ -1430,18 +1430,18 @@ footer h5 {
     overflow: hidden;
     padding-left: 45px;
     padding-right: 50px;
-    background: rgba(0, 0, 0, 0) url("../image/megnor/footer-icon.png") no-repeat scroll -8px 4px;
+    background: rgba(0, 0, 0, 0) url("../img/footer-icon.png") no-repeat scroll -8px 4px;
     margin-bottom: 35px;
     min-height: 40px;
     line-height: 40px;
 }
 #contact .phone {
-    background: url(../image/megnor/footer-icon.png) no-repeat scroll -6px -66px transparent;
+    background: url(../img/footer-icon.png) no-repeat scroll -6px -66px transparent;
     padding-left: 45px;
     margin-bottom: 5px;
 }
 #contact .email {
-    background: url(../image/megnor/footer-icon.png) no-repeat scroll -6px -132px transparent;
+    background: url(../img/footer-icon.png) no-repeat scroll -6px -132px transparent;
     padding-left: 45px;
 }
 #footer .column {
@@ -1510,7 +1510,7 @@ height:100%;
     width: 93%;
 }
 .manufacture_block > ul li {
-    background: url("../image/megnor/pipe.gif") no-repeat scroll right 6px transparent;
+    background: url("../img/pipe.gif") no-repeat scroll right 6px transparent;
     display: inline-block;
     padding: 0 15px 2px 10px;
 }
@@ -1606,7 +1606,7 @@ height:100%;
     top: -50px;
 }
 .test-content .quote-img {
-    background: url(../image/megnor/quote.png) no-repeat scroll center center transparent;
+    background: url(../img/quote.png) no-repeat scroll center center transparent;
     width: 23px;
     height: 19px;
     position: relative;
@@ -2341,7 +2341,7 @@ h2.price {
     border: none;
     display: inline-block;
     float: left;
-    background: url(../image/megnor/icons.png) no-repeat scroll 8px 9px #ececec;
+    background: url(../img/icons.png) no-repeat scroll 8px 9px #ececec;
     color: #333;
     padding: 7px 10px;
     font-weight: normal;
@@ -2418,7 +2418,7 @@ h2.price {
     position: relative;
 }
 .product-thumb .button-group button.wishlist {
-    background: url(../image/megnor/icons.png) no-repeat scroll 8px -112px #ececec;
+    background: url(../img/icons.png) no-repeat scroll 8px -112px #ececec;
     left: -82px;
     position: relative;
     transition: all 0.5s ease 0s;
@@ -2431,7 +2431,7 @@ h2.price {
     background-position: 8px -143px;
 }
 .product-thumb .button-group button.compare {
-    background: url(../image/megnor/icons.png) no-repeat scroll 8px -174px #ececec;
+    background: url(../img/icons.png) no-repeat scroll 8px -174px #ececec;
     left: -123px;
     position: relative;
     transition: all 0.7s ease 0s;
@@ -2601,7 +2601,7 @@ h2.price {
 }
 .productpage .form-group.qty .wishlist,
 .quickview .form-group.qty .wishlist {
-    background: #ececec url("../image/megnor/icons.png") no-repeat scroll 8px -112px;
+    background: #ececec url("../img/icons.png") no-repeat scroll 8px -112px;
 }
 .productpage .form-group.qty .wishlist:hover,
 .quickview .form-group.qty .wishlist:hover {
@@ -2610,7 +2610,7 @@ h2.price {
 }
 .productpage .form-group.qty .compare,
 .quickview .form-group.qty .compare {
-    background: #ececec url("../image/megnor/icons.png") no-repeat scroll 8px -174px;
+    background: #ececec url("../img/icons.png") no-repeat scroll 8px -174px;
 }
 .productpage .form-group.qty .compare:hover,
 .quickview .form-group.qty .compare:hover {
@@ -3143,7 +3143,7 @@ h2.price {
     position: relative;
 }
 .top_button {
-    /*background: url("../image/megnor/top_arrow.png") no-repeat scroll 0 0 transparent;*/
+    /*background: url("../img/top_arrow.png") no-repeat scroll 0 0 transparent;*/
     height: 30px;
     width: 30px;
     right: 20px;
@@ -3223,25 +3223,25 @@ h2.price {
     margin-bottom: 10px;
 }
 .image1 {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll 7px -165px;
+    background: url("../img/cms-sprite.png") no-repeat scroll 7px -165px;
     float: left;
     height: 50px;
     width: 60px;
 }
 .image2 {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll 7px -116px;
+    background: url("../img/cms-sprite.png") no-repeat scroll 7px -116px;
     float: left;
     height: 50px;
     width: 60px;
 }
 .image3 {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll 7px -52px;
+    background: url("../img/cms-sprite.png") no-repeat scroll 7px -52px;
     float: left;
     height: 50px;
     width: 60px;
 }
 .image4 {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll 7px 6px;
+    background: url("../img/cms-sprite.png") no-repeat scroll 7px 6px;
     float: left;
     height: 50px;
     width: 60px;
@@ -3266,12 +3266,12 @@ h2.price {
     padding: 6px 12px;
 }
 .category_filter #grid-view {
-    background: url(../image/megnor/grid-list.png) no-repeat scroll 1px -21px;
+    background: url(../img/grid-list.png) no-repeat scroll 1px -21px;
     width: 23px;
     height: 30px;
 }
 .category_filter #list-view {
-    background: url(../image/megnor/grid-list.png) no-repeat scroll -26px -21px;
+    background: url(../img/grid-list.png) no-repeat scroll -26px -21px;
     width: 23px;
     height: 30px;
 }
@@ -3444,7 +3444,7 @@ h2.price {
     margin: 10px 0;
 }
 .contact-info .address-detail strong {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll -6px -235px transparent;
+    background: url("../img/cms-sprite.png") no-repeat scroll -6px -235px transparent;
     padding: 5px 0 0 35px;
     height: 28px;
     margin: 0 5px 0 0;
@@ -3464,7 +3464,7 @@ h2.price {
     margin-bottom: 7px;
 }
 .contact-info .telephone strong {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll -5px -314px transparent;
+    background: url("../img/cms-sprite.png") no-repeat scroll -5px -314px transparent;
     padding: 5px 0 0 35px;
     margin: 0 5px 0 0;
     height: 28px;
@@ -3474,7 +3474,7 @@ h2.price {
     font-weight: 500
 }
 .contact-info .fax strong {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll -5px -272px transparent;
+    background: url("../img/cms-sprite.png") no-repeat scroll -5px -272px transparent;
     padding: 5px 0 0 35px;
     height: 28px;
     margin: 0 5px 0 0;
@@ -3485,7 +3485,7 @@ h2.price {
     font-weight: 500
 }
 .contact-info .openingtime strong {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll -5px -355px transparent;
+    background: url("../img/cms-sprite.png") no-repeat scroll -5px -355px transparent;
     padding: 5px 0 0 35px;
     height: 28px;
     margin: 0 5px 0 0;
@@ -3495,7 +3495,7 @@ h2.price {
     font-weight: 500
 }
 .contact-info .comments strong {
-    background: url("../image/megnor/cms-sprite.png") no-repeat scroll -5px -399px transparent;
+    background: url("../img/cms-sprite.png") no-repeat scroll -5px -399px transparent;
     padding: 5px 0 0 35px;
     height: 28px;
     margin: 10px 0 0;
@@ -3540,7 +3540,7 @@ h2.price {
     width: 100%;
     height: 100%;
     z-index: 9;
-    background: url("../image/megnor/ajax-loader.gif") 50% 50% no-repeat #fff;
+    background: url("../img/ajax-loader.gif") 50% 50% no-repeat #fff;
 }
 .main-slider {
     position: relative;
@@ -3649,7 +3649,7 @@ div#product {
 #bottom-footer li {
     display: inline;
     padding: 1px 7px 1px 2px;
-    background: url(../image/megnor/pipe.gif) no-repeat scroll right center transparent;
+    background: url(../img/pipe.gif) no-repeat scroll right center transparent;
 }
 #bottom-footer li.contact {
     background: none;
@@ -4485,7 +4485,7 @@ div#product {
 }
 .shipping-cms {
     display: inline-block;
-    background: url(../image/megnor/plane.png) no-repeat scroll left center transparent;
+    background: url(../img/plane.png) no-repeat scroll left center transparent;
     height: 26px;
     padding-left: 75px;
 }
@@ -4500,7 +4500,7 @@ div#product {
     text-transform: uppercase;
 }
 .headertopright .text2 {
-    background: transparent url("../image/megnor/call.png") no-repeat scroll left center;
+    background: transparent url("../img/call.png") no-repeat scroll left center;
     color: #2d2d2d;
     display: inline-block;
     font-size: 16px;
@@ -4548,7 +4548,7 @@ div#product {
 .serviceblock {
     display: inline-block;
     width: 22.6%;
-    background-image: url(../image/megnor/services.png);
+    background-image: url(../img/services.png);
     background-repeat: no-repeat;
     padding-left: 68px;
     margin: 30px 13px;
@@ -4715,7 +4715,7 @@ div#product {
 }
 .app-cms li a {
     background-attachment: scroll;
-    background-image: url("../image/megnor/play-store.png");
+    background-image: url("../img/play-store.png");
     background-repeat: no-repeat;
     float: left;
     height: 31px;
@@ -4958,7 +4958,7 @@ div#product {
     left: auto !important;
 }
 .categorytab .tab-pane .owl-prev span {
-    background: url(../image/megnor/arrow.png) no-repeat scroll 5px 0px;
+    background: url(../img/arrow.png) no-repeat scroll 5px 0px;
     border: medium none;
     cursor: pointer;
     display: block;
@@ -4983,7 +4983,7 @@ div#product {
     right: 10px !important;
 }
 .categorytab .tab-pane .owl-next span {
-    background: url(../image/megnor/arrow.png) no-repeat scroll -15px 0px transparent;
+    background: url(../img/arrow.png) no-repeat scroll -15px 0px transparent;
     border: medium none;
     cursor: pointer;
     display: inline-block;
@@ -5158,7 +5158,7 @@ div#product {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     -khtml-opacity: 1;
-    background: url(../image/megnor/arrow.png) no-repeat scroll 1px 3px transparent;
+    background: url(../img/arrow.png) no-repeat scroll 1px 3px transparent;
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -5181,7 +5181,7 @@ div#product {
     -webkit-opacity: 1;
     -moz-opacity: 1;
     -khtml-opacity: 1;
-    background: url(../image/megnor/arrow.png) no-repeat scroll -10px 3px transparent;
+    background: url(../img/arrow.png) no-repeat scroll -10px 3px transparent;
     transition: none;
     -webkit-transition: none;
     -moz-transition: none;
@@ -5956,7 +5956,7 @@ div#product {
     color: #333;
     display: inline-block;
     font-size: 14px;
-    background: url(../image/megnor/icons.png) no-repeat scroll 7px -52px #ececec;
+    background: url(../img/icons.png) no-repeat scroll 7px -52px #ececec;
     height: 33px;
     width: 33px;
     padding: 7px 10px;
@@ -8035,3 +8035,21 @@ li {
     color: #FF7A5F;
 }
 /* Megnor www.templatemela.com End */
+.custom-social-cont {
+    margin-top: 0px !important;
+}
+.custom-social-cont a{
+    width: 23px !important;
+    height: 27px !important;
+    padding: 4px 14px !important;
+}
+.custom-social-cont i{
+    font-size: 14px !important;
+    margin-left: -5.6px !important;
+}
+.custom-social-cont i.fa-facebook{
+    margin-left: -4.5px !important;
+}
+.custom-social-cont .social-cms {
+    margin-bottom: 0px !important;
+}
