@@ -11,18 +11,18 @@
                             </div>
                             <div class="phone">
                                 <div class="contact_phone"><a href="tel:+994123445700">+994 (12) 563-52-46</a></div>
-                            </div>
-                            <div class="email">
-                                <a target="_blank" href="mailto:xudaferin.lepka@mail.ru"></a>
+                                
                             </div>
                         </li>
                         <li>
+                            <div class="email">
+                                <a target="_blank" href="mailto:xudaferin.lepka@mail.ru">xudaferin.lepka@mail.ru</a>
+                            </div>
+                        
                             <div class="phone">
                                 <div class="contact_phone"><a href="tel:+994702059080">+994 (70) 205-90-80</a></div>
                                 <div class="contact_phone"><a href="tel:+994508734865">+994 (50) 873-48-65</a></div>
-                            </div>
-                            <div class="email">
-                                <a target="_blank" href="mailto:xudaferin.lepka@mail.ru">xudaferin.lepka@mail.ru</a>
+                            
                             </div>
                         </li>
                     </ul>
@@ -32,17 +32,40 @@
                     <ul class="list-unstyled">
                         <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
                         <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
+                        <li><a href="https://www.facebook.com/xudaferinlepka/" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/xudaferin.lepka/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
-                <div id="extra-link" class="col-sm-3 column">
-                    <h5>Əlavələr</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Brendlər</a></li>
-                        <li><a href="#">Ortaqlıq</a></li>
-                        <li><a href="#">Endirimlər</a></li>
-                        <li><a href="#">Xəbər bülleteni</a></li>
-                        <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
-                    </ul>
+                <div id="extra-link" class="col-sm-5 column">
+                    <div class="col-sm-12">
+                        <h5>Əlaqə</h5>
+                    </div>
+                    <div class="col-sm-12">
+                        <!-- <div class="well"> -->
+                            <h3></h3>
+                            <p><strong></strong></p>
+                            <?php echo validation_errors(); ?>
+                            <form action="" method="post"
+                                enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label class="control-label" for="input-email">Adınız</label>
+                                    <input type="text" name="name"placeholder="Adınız" id="input-email"
+                                        class="form-control" value="<?php echo set_value('name'); ?>">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="input-password">Nömrə</label>
+                                    <input type="tel    " name="phone" value="<?php echo set_value('phone'); ?>" placeholder="Nömrə" id="input-password" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label" for="input-email">Mesajınız</label>
+                                    <textarea type="text" name="message" value="" placeholder="Mesajınız" id="input-email"
+                                        class="form-control"><?php echo set_value('message'); ?></textarea>
+                                </div>
+                                <input type="submit" value="Göndər" class="btn btn-primary">
+                                <input type="hidden" name="redirect" value="#">
+                            </form>
+                        <!-- </div> -->
+                    </div>
                 </div>
                 <!-- <div class="col-sm-3 column">
                     <h5>Hesabım</h5>

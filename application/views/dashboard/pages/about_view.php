@@ -15,8 +15,8 @@
         </aside>
         <div id="content" class="col-sm-9">
             <ul class="breadcrumb">
-                <li><a href="http://masalmebel.az/index.php?route=common/home"><i class="fa fa-home"></i></a></li>
-                <li><a href="http://masalmebel.az/index.php?route=information/information&amp;information_id=4"><?=$pageData->title;?></a></li>
+                <li><a href="/ci"><i class="fa fa-home"></i></a></li>
+                <li><a href="#"><?=$pageData->title;?></a></li>
             </ul>
             <h1 class="page-title"><?=$pageData->title;?></h1>
             <p><?=$pageData->description;?></p>

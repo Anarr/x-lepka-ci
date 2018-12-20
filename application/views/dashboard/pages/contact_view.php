@@ -73,20 +73,20 @@
                                     <form action="" method="post"
                                         enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label class="control-label" for="input-email">Adiniz</label>
+                                            <label class="control-label" for="input-email">Adınız</label>
                                             <input type="text" name="name"placeholder="Adınız" id="input-email"
                                                 class="form-control" value="<?php echo set_value('name'); ?>">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="input-password">Nomre</label>
-                                            <input type="tel    " name="phone" value="<?php echo set_value('phone'); ?>" placeholder="Nomre" id="input-password" class="form-control">
+                                            <label class="control-label" for="input-password">Nömrə</label>
+                                            <input type="tel    " name="phone" value="<?php echo set_value('phone'); ?>" placeholder="Nömrə" id="input-password" class="form-control">
                                         </div>
                                         <div class="form-group">
-                                            <label class="control-label" for="input-email">Messajiniz</label>
-                                            <textarea type="text" name="message" value="" placeholder="Mesajiniz" id="input-email"
+                                            <label class="control-label" for="input-email">Mesajınız</label>
+                                            <textarea type="text" name="message" value="" placeholder="Mesajınız" id="input-email"
                                                 class="form-control"><?php echo set_value('message'); ?></textarea>
                                         </div>
-                                        <input type="submit" value="Gonder" class="btn btn-primary">
+                                        <input type="submit" value="Göndər" class="btn btn-primary">
                                         <input type="hidden" name="redirect" value="#">
                                     </form>
                                 </div>
