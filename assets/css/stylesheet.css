@@ -327,6 +327,23 @@ header .btn-link:focus,
     display: -webkit-flex;     /* NEW - Chrome */
     display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
 }
+.center-x {
+    justify-content: center;
+}
+.center-y {
+    align-items: center;
+}
+#slideshow0 .item{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    justify-content: center;
+}
+#slideshow0 .item img{
+    height: 500px;
+}
 .header-right {
     float: right;
     width: 77.1%;
@@ -346,7 +363,9 @@ header {
     position: relative;
     background: #f2f2f2;
     /* background-color: #fff; */
-    border-bottom: 1px solid #f2f2f2;
+    /* border-bottom: 1px solid #f2f2f2; */
+    border-bottom: 1px solid #e31e24 !important;
+    border-top: 1px solid #e31e24 !important;
 }
 .col-sm-4.header-logo {
     width: auto;
@@ -394,8 +413,8 @@ header {
     float: left;
     position: relative;
     text-align: left;
-    margin-top: 3px;
-    margin-bottom: 13px;
+    /* margin-top: 3px; */
+    /* margin-bottom: 13px; */
     border-left: 1px solid #CBCBCB;
     padding-left: 25px;
 }
@@ -3543,14 +3562,14 @@ h2.price {
     background: url("../img/ajax-loader.gif") 50% 50% no-repeat #fff;
 }
 .main-slider {
-    position: relative;
+    /* position: relative;
     width: 100%;
     height: 450px;
     float: left;
     margin-top: 20px;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;  */
 }
 .main-slider img {}
 .main-slider .owl-carousel {}
@@ -8049,6 +8068,9 @@ li {
 }
 .custom-social-cont i.fa-facebook{
     margin-left: -4.5px !important;
+}
+.custom-social-cont i.fa-envelope{
+    margin-left: -6.5px !important;
 }
 .custom-social-cont .social-cms {
     margin-bottom: 0px !important;

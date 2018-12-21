@@ -80,7 +80,8 @@
                         <div class="social-cms">
                             <ul class="social">
                                 <li class="facebook"><a href="https://www.facebook.com/xudaferinlepka/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li class="instagram"><a href="https://www.instagram.com/xudaferin.lepka/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="instagram"><a href="https://www.instagram.com/xudaferin_lepka/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li class="mail"><a href="mailto:xudaferinlepka@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +96,7 @@
             <div class="container">
                 <div class="row">
                     <div class="header-main">
-                        <div class="header-left flex">
+                        <div class="header-left">
                             <div class="col-sm-4 header-logo">
                                 <div id="logo">
                                     <a href="/ci"><img src="<?=base_url()?>assets/img/logo1.png"
@@ -107,8 +108,14 @@
                             <div class="head-right-bottom">
                                 <div class="headertopright">
                                     <div class="text2">
-                                        <div class="text2-dec">Bizə zəng edin</div><a href="contact"><span class="hidden-xs hidden-sm hidden-md">(+994
-                                                70) 205-90-80 <br /> (+994 50) 873-48-65</span></a>
+                                        <div class="text2-dec">Bizə zəng edin</div>
+                                        <a href="contact">
+                                            <span class="hidden-xs hidden-sm hidden-md">
+                                                (+994 70) 205-90-80 <br />
+                                                (+994 50) 873-48-65 <br />
+                                                (+994 12) 563-52-46
+                                            </span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

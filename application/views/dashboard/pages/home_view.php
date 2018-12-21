@@ -6,8 +6,27 @@
                 <?php $this->load->view('dashboard/components/left_menu_view');?>
             </div>
             <div class="col-md-9">
-                <div class="main-slider" style="background: url('<?= 'assets/img/xudo.jpg';?>');background-repeat: no-repeat;background-position: center;background-size: cover;">
+                <!-- <div class="main-slider" style="background: url('<?= 'assets/img/xudo.jpg';?>');background-repeat: no-repeat;background-position: center;background-size: cover;">
+                </div> -->
+                <div class="main-slider">
+                    <div id="spinner"></div>
+                    <div id="slideshow0" class="owl-carousel" style="opacity: 1;">
+                        <div class="item">
+                            <img src="<?= 'assets/img/xudo.jpg';?>" alt="baner1" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="<?= 'assets/img/xudo1.jpg';?>" alt="baner2" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="<?= 'assets/img/xudo2.jpg';?>" alt="baner3" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="<?= 'assets/img/xudo3.jpg';?>" alt="baner3" class="img-responsive" />
+                        </div>
+                    </div>
                 </div>
+                
+
             </div>
             <script type="text/javascript">
                 $('#slideshow0').owlCarousel({
@@ -31,6 +50,28 @@
             <div class="subbanner-cms1">
                 <div class="subbanner1"><a href="#"><img src="<?=base_url()?>img/sub1_new.jpg" alt="" class="img-responsive"></a></div>
                 <div class="subbanner2"><a href="#"><img src="img/sub2_new.jpg" alt="" class="img-responsive"></a></div>
+            </div>
+            <div class="servicetop-cms">
+                <div class="service">
+                    <div class="serviceblock1 serviceblock clearfix">
+                        <div class="title">
+                            <div class="title">Pulsuz çatdırılma</div>
+                            <div class="subtitle">bütün məhsullarda</div>
+                        </div>
+                    </div>
+                    <div class="serviceblock2 serviceblock clearfix">
+                        <div class="title">Dəyişmək və zəmanət</div>
+                        <div class="subtitle">geri qaytarmaq İmkanı</div>
+                    </div>
+                    <div class="serviceblock3 serviceblock clearfix">
+                        <div class="title">Telefon dəstək xətti</div>
+                        <div class="subtitle">+994 (50) 873-48-65<br></div>
+                    </div>
+                    <div class="serviceblock4 serviceblock clearfix">
+                        <div class="title">Qapıda ödəmə</div>
+                        <div class="subtitle">nağd şəkildə</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -93,7 +134,7 @@
                 -->
             </script>
             <span class="special_default_width" style="display:none; visibility:hidden"></span>
-            
+
         </aside>
         <div id="content" class="col-sm-9">
 

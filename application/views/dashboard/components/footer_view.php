@@ -33,7 +33,7 @@
                         <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
                         <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                         <li><a href="https://www.facebook.com/xudaferinlepka/" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.instagram.com/xudaferin.lepka/" target="_blank">Instagram</a></li>
+                        <li><a href="https://www.instagram.com/xudaferin_lepka/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
                 <div id="extra-link" class="col-sm-5 column">
