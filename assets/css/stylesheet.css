@@ -8087,3 +8087,25 @@ li {
 .custom-social-cont .social-cms {
     margin-bottom: 0px !important;
 }
+
+/* theme background-color */
+
+body {
+    background-color: #83aece !important;
+}
+.nav-container {
+    background-color: #83aece !important;
+}
+#top {
+    background-color: #83aece !important;
+}
+.common-home footer {
+    background-color: #83aece !important;
+    border-color: #83aece !important;
+}
+.category-left-box {
+    background-color: #83aece !important;
+}
+.product-thumb {
+    background-color: #83aece !important;
+}

@@ -111,9 +111,10 @@
                                         <div class="text2-dec">Bizə zəng edin</div>
                                         <a href="contact">
                                             <span class="hidden-xs hidden-sm hidden-md">
-                                                (+994 70) 205-90-80 <br />
                                                 (+994 50) 873-48-65 <br />
-                                                (+994 12) 563-52-46
+                                                (+994 12) 563-52-46 <br />
+                                                (+994 50) 338-12-11 <br />
+                                                (+994 70) 205-90-80
                                             </span>
                                         </a>
                                     </div>

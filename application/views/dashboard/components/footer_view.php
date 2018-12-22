@@ -11,7 +11,7 @@
                             </div>
                             <div class="phone">
                                 <div class="contact_phone"><a href="tel:+994123445700">+994 (12) 563-52-46</a></div>
-                                
+                                <div class="contact_phone"><a href="tel:+994503381211">+994 (50) 338-12-11</a></div>
                             </div>
                         </li>
                         <li>
