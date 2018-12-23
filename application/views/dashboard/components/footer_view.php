@@ -5,7 +5,7 @@
             <div class="footer-blocks">
                 <div class="col-sm-1">
                 </div>
-                <div id="contact" class="col-sm-3">
+                <div id="contact" class="col-sm-3 column">
                     <h5 class="">Əlaqə</h5>
                     <ul>
                         <li>
@@ -30,7 +30,7 @@
                         </li>
                     </ul>
                 </div>
-                <div id="info" class="col-sm-3">
+                <div id="info" class="col-sm-3 column">
                     <h5>Məlumat</h5>
                     <ul class="list-unstyled">
                         <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
@@ -39,7 +39,7 @@
                         <li><a href="https://www.instagram.com/xudaferin_lepka/" target="_blank">Instagram</a></li>
                     </ul>
                 </div>
-                <div id="extra-link" class="col-sm-3">
+                <div id="extra-link" class="col-sm-3 column">
                     <div class="col-sm-12">
                         <h5>Əlaqə</h5>
                     </div>
