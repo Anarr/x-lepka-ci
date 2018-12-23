@@ -8137,5 +8137,13 @@ footer div,
 footer h5{
     color: #fff ;
 }
-
+.category-left-box a{
+    font-weight: 550 !important;
+}
 /* from this FF7A5F color to this #e31e24 */
+
+
+.btn-primary:hover {
+    background-color: #e31e24 !important;
+}
+/* bootstrap theme color changes*/
