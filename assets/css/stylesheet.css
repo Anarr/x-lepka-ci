@@ -8090,22 +8090,52 @@ li {
 
 /* theme background-color */
 
-body {
-    background-color: #83aece !important;
+/* body {
+    background-color: #039be6 !important;
 }
 .nav-container {
-    background-color: #83aece !important;
+    background-color: #039be6 !important;
 }
 #top {
-    background-color: #83aece !important;
-}
-.common-home footer {
-    background-color: #83aece !important;
-    border-color: #83aece !important;
-}
-.category-left-box {
-    background-color: #83aece !important;
+    background-color: #039be6 !important;
+} */
+/* .common-home footer {
+    background-color: #039be6 !important;
+    border-color: #039be6 !important;
+} */
+/* .category-left-box {
+    background-color: #039be6 !important;
 }
 .product-thumb {
-    background-color: #83aece !important;
+    background-color: #039be6 !important;
+} */
+.header-container header {
+    background-color: #4FC3F7 !important;
+    color: #fff;
 }
+.header-right{
+    color: #fff;
+}
+.text2-dec {
+    color: #fff;
+}
+.header-container header span{
+    color: #fff;
+}
+.header-container header a{
+    color: #fff;
+}
+footer {
+    /* background-color: #4FC3F7 !important; */
+}
+.footer-blocks {
+    background-color: #4FC3F7 !important;
+}
+footer a,
+footer span,
+footer div,
+footer h5{
+    color: #fff ;
+}
+
+/* from this FF7A5F color to this #e31e24 */
