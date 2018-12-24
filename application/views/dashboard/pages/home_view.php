@@ -214,33 +214,37 @@
                         <div class="slider-item">
                     <div class="product-block">
                     <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/left-banner1-90x86.jpg" alt="Manufacturers" />
+                            <img src="<?=base_url()?>assets/img/part1.jpg" alt="Manufacturers" />
                         </div></div></div>
                         <div class="slider-item">
                     <div class="product-block">
                     <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/b5-90x86.jpg" alt="Manufacturers5" />
+                            <img src="<?=base_url()?>assets/img/part2.jpg" alt="Manufacturers5" />
                         </div></div></div>
                         <div class="slider-item">
                     <div class="product-block">
                     <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/b4-90x86.jpg" alt="Manufacturers4" />
+                            <img src="<?=base_url()?>assets/img/part3.png" alt="Manufacturers4" />
                         </div></div></div>
                         <div class="slider-item">
                     <div class="product-block">
                     <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/b3-90x86.jpg" alt="Manufacturers3" />
+                            <img src="<?=base_url()?>assets/img/part4.jpg" alt="Manufacturers3" />
                         </div></div></div>
+                        <!-- <div class="slider-item">
+                            <div class="product-block">
+                                <div class="product-block-inner">
+                                    <img src="http://masalmebel.az/image/cache/catalog/b2-90x86.jpg" alt="Manufacturers2" />
+                                </div>
+                            </div>
+                        </div>
                         <div class="slider-item">
-                    <div class="product-block">
-                    <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/b2-90x86.jpg" alt="Manufacturers2" />
-                        </div></div></div>
-                        <div class="slider-item">
-                    <div class="product-block">
-                    <div class="product-block-inner">
-                            <img src="http://masalmebel.az/image/cache/catalog/b1-90x86.jpg" alt="Manufacturers1" />
-                        </div></div></div>
+                            <div class="product-block">
+                                <div class="product-block-inner">
+                                    <img src="http://masalmebel.az/image/cache/catalog/b1-90x86.jpg" alt="Manufacturers1" />
+                                </div>
+                            </div>
+                        </div> -->
                 </div>
             </div>
 

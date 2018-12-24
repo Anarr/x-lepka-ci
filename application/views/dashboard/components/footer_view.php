@@ -13,8 +13,8 @@
                                 <div class="contact_address" style="line-height:20px;">Ünvan: A. Gəraybəyli 37A<br>(Ayna Sultanova)</div>
                             </div>
                             <div class="phone">
+                                <div class="contact_phone"><a href="tel:+994508734865">+994 (50) 873-48-65</a></div>
                                 <div class="contact_phone"><a href="tel:+994123445700">+994 (12) 563-52-46</a></div>
-                                <div class="contact_phone"><a href="tel:+994503381211">+994 (50) 338-12-11</a></div>
                             </div>
                         </li>
                         <li>
@@ -23,8 +23,8 @@
                             </div>
                         
                             <div class="phone">
+                                <div class="contact_phone"><a href="tel:+994503381211">+994 (50) 338-12-11</a></div>
                                 <div class="contact_phone"><a href="tel:+994702059080">+994 (70) 205-90-80</a></div>
-                                <div class="contact_phone"><a href="tel:+994508734865">+994 (50) 873-48-65</a></div>
                             
                             </div>
                         </li>
