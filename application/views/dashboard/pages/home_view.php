@@ -12,16 +12,16 @@
                     <div id="spinner"></div>
                     <div id="slideshow0" class="owl-carousel" style="opacity: 1;">
                         <div class="item">
-                            <img src="<?= 'assets/img/xudo.jpg';?>" alt="baner1" class="img-responsive" />
+                            <img src="<?= base_url().'assets/img/xudo.jpg';?>" alt="baner1" class="img-responsive" />
                         </div>
                         <div class="item">
-                            <img src="<?= 'assets/img/xudo1.jpg';?>" alt="baner2" class="img-responsive" />
+                            <img src="<?= base_url().'assets/img/xudo1.jpg';?>" alt="baner2" class="img-responsive" />
                         </div>
                         <div class="item">
-                            <img src="<?= 'assets/img/xudo2.jpg';?>" alt="baner3" class="img-responsive" />
+                            <img src="<?= base_url().'assets/img/xudo2.jpg';?>" alt="baner3" class="img-responsive" />
                         </div>
                         <div class="item">
-                            <img src="<?= 'assets/img/xudo3.jpg';?>" alt="baner3" class="img-responsive" />
+                            <img src="<?= base_url().'assets/img/xudo3.jpg';?>" alt="baner3" class="img-responsive" />
                         </div>
                     </div>
                 </div>
