@@ -79,7 +79,7 @@
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
-    background: url(../../image/megnor/arrow.png) no-repeat scroll 1px 3px transparent;
+    background: url(../../img/arrow.png) no-repeat scroll 1px 3px transparent;
 }
 .product-image .customNavigation a.prev {
     left: 0;
@@ -108,7 +108,7 @@
     -moz-transition: none;
     -ms-transition: none;
     -o-transition: none;
-    background: url(../../image/megnor/arrow.png) no-repeat scroll -10px 3px transparent;
+    background: url(../../img/arrow.png) no-repeat scroll -10px 3px transparent;
 }
 .customNavigation a.next:hover {
     text-decoration: none;

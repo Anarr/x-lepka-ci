@@ -205,6 +205,45 @@
                 <span class="featured_default_width" style="display:none; visibility:hidden"></span>
                 <span class="module_default_width" style="display:none; visibility:hidden"></span>
             </div>
+            <div id="carousel-0" class="banners-slider-carousel">
+                <div class="customNavigation">
+                    <a class="prev fa"></a>
+                    <a class="next fa"></a>
+                </div>
+                <div class="product-carousel" id="module-0-carousel">
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/left-banner1-90x86.jpg" alt="Manufacturers" />
+                        </div></div></div>
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/b5-90x86.jpg" alt="Manufacturers5" />
+                        </div></div></div>
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/b4-90x86.jpg" alt="Manufacturers4" />
+                        </div></div></div>
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/b3-90x86.jpg" alt="Manufacturers3" />
+                        </div></div></div>
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/b2-90x86.jpg" alt="Manufacturers2" />
+                        </div></div></div>
+                        <div class="slider-item">
+                    <div class="product-block">
+                    <div class="product-block-inner">
+                            <img src="http://masalmebel.az/image/cache/catalog/b1-90x86.jpg" alt="Manufacturers1" />
+                        </div></div></div>
+                </div>
+            </div>
+
         </div>
     </div>
     <?php $this->load->view('dashboard/components/footer_view');?>
