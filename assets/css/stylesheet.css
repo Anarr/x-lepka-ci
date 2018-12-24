@@ -4158,7 +4158,7 @@ div#product {
     -moz-animation: slideDashYopp 1.5s infinite linear;
     -ms-animation: slideDashYopp 1.5s infinite linear;
     -o-animation: slideDashYopp 1.5s infinite linear;
-    border-color: #e31e24;
+    border-color: #4FC3F7;
 }
 .subbannercmspart3 .subbanner-inner:hover:after {
     animation: slideDashY 1.5s infinite linear;
@@ -4166,7 +4166,7 @@ div#product {
     -moz-animation: slideDashY 1.5s infinite linear;
     -ms-animation: slideDashY 1.5s infinite linear;
     -o-animation: slideDashY 1.5s infinite linear;
-    border-color: #e31e24;
+    border-color: #4FC3F7;
 }
 .subbannercmspart3 .subbanner-inner:hover .inner-content:after {
     -webkit-animation: slideDashXopp 10s infinite linear;
@@ -4174,7 +4174,7 @@ div#product {
     -moz-animation: slideDashXopp 10s infinite linear;
     -ms-animation: slideDashXopp 10s infinite linear;
     -o-animation: slideDashXopp 10s infinite linear;
-    border-color: #e31e24;
+    border-color: #4FC3F7;
 }
 .subbannercmspart3 .subbanner-inner:hover .inner-content:before {
     -webkit-animation: slideDash 10s infinite linear;
@@ -4182,7 +4182,7 @@ div#product {
     -moz-animation: slideDash 10s infinite linear;
     -ms-animation: slideDash 10s infinite linear;
     -o-animation: slideDash 10s infinite linear;
-    border-color: #e31e24;
+    border-color: #4FC3F7;
 }
 @-webkit-keyframes slideDashXopp {
     from {
@@ -8145,5 +8145,8 @@ footer h5{
 
 .btn-primary:hover {
     background-color: #e31e24 !important;
+}
+.banner-text1 span{
+    color: #4FC3F7 !important;
 }
 /* bootstrap theme color changes*/
