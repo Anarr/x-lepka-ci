@@ -205,6 +205,8 @@
                 <span class="featured_default_width" style="display:none; visibility:hidden"></span>
                 <span class="module_default_width" style="display:none; visibility:hidden"></span>
             </div>
+            <hr>
+            <h2 class="page-title">Partnyorlar</h2>
             <div id="carousel-0" class="banners-slider-carousel">
                 <div class="customNavigation">
                     <a class="prev fa"></a>

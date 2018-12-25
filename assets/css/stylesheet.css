@@ -8154,6 +8154,11 @@ footer h5{
 .banner-text1 span{
     color: #fff !important;
 }
+.box-category-heading {
+    background-color: #4FC3F7;
+    color: #fff !important;
+}
+
 /* bootstrap theme color changes*/
 
 #module-0-carousel .product-block {
