@@ -57,3 +57,8 @@ $route['about'] = 'welcome/about';
 $route['contact'] = 'welcome/contact';
 $route['products/(:num)'] = 'welcome/products/$1';
 $route['category/(:num)'] = 'welcome/category/$1';
+
+// Admin routes
+
+$route['xadmin'] = 'AdminController/signin';
+$route['xadmin/home'] = 'AdminController/home';
