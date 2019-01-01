@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Bootstrap Admin Theme v3</title>
+    <title>Xudafərin Lepka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="<?=base_url();?>assets/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
