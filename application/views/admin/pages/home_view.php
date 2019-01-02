@@ -10,5 +10,5 @@
 	</div>
 </div>
 <?php 
-//$this->load->view('admin/components/footer_view');
+$this->load->view('admin/components/footer_view');
 ?>
