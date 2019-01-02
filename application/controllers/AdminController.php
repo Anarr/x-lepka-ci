@@ -19,4 +19,16 @@ class AdminController extends CI_Controller
     {
         $this->load->view('admin/pages/home_view', array());
     }
+    public function pages()
+    {
+        $this->load->view('admin/pages/pages_view', array());
+    }
+    public function categories()
+    {
+        $this->load->view('admin/pages/categories_view', array());
+    }
+    public function products()
+    {
+        $this->load->view('admin/pages/products_view', array());
+    }
 }

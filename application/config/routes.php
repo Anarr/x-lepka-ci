@@ -62,3 +62,6 @@ $route['category/(:num)'] = 'welcome/category/$1';
 
 $route['xadmin'] = 'AdminController/signin';
 $route['xadmin/home'] = 'AdminController/home';
+$route['xadmin/pages'] = 'AdminController/pages';
+$route['xadmin/categories'] = 'AdminController/categories';
+$route['xadmin/products'] = 'AdminController/products';
