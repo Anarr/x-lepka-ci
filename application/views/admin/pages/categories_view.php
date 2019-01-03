@@ -31,16 +31,14 @@
 										<td><?=++$index;?></td>
 										<td><?=$category->name;?></td>
 										<td>
-											<form action="?<?=$index?>" method="GET">
-												<button class="btn btn-primary">
-													Dəyiş
-												</button>
-											</form>
+											<a href="<?=base_url() . 'xadmin/categories/'.$category->id.'/edit';?>" class="btn btn-primary">
+												Dəyiş
+											</a>
 										</td>
 										<td>
-											<button class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = '?delete-id=<?=$index?>'}">
+											<a href="<?=base_url() . 'xadmin/categories/'.$category->id.'/remove';?>" class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = '?delete-id=<?=$index?>'}">
 												Sil
-											</button>
+											</a>
 										</td>
 									</tr>
 								<?php endforeach;?>
@@ -65,7 +63,7 @@
 							<fieldset>
 								<div class="form-group col-sm-6">
 									<label class="sr-only" for="exampleInputEmail2"></label>
-									<input name="name" class="form-control" id="exampleInputEmail2" placeholder="Kateqoriya Adı">
+									<input name="name" class="form-control" id="exampleInputEmail2" placeholder="Kateqoriya Adı" value="<?=$categoryInfo['name'];?>">
 								</div>
 								<button type="submit" class="btn btn-primary">
 									Əlavə et

@@ -16,22 +16,22 @@
 							</div>
 						</div>
 						<div class="panel-body">
-							<form action="">
+							<form action="" method="POST">
 								<fieldset>
 									<div class="form-group">
 										<label>Başlıq</label>
-										<input class="form-control" placeholder="Başlıq" type="text">
+										<input class="form-control" placeholder="Başlıq" type="text" value="<?=$pageInfo[0]->title;?>" name="title">
 									</div>
 									<div class="form-group">
 										<label>Haqqımızda</label>
-										<textarea class="form-control" placeholder="Haqqımızda" rows="3"></textarea>
+										<textarea class="form-control" placeholder="Haqqımızda" rows="3" name="description"><?=$pageInfo[0]->description;?></textarea>
 									</div>
 								</fieldset>
 								<div>
-									<div class="btn btn-primary">
+									<button class="btn btn-primary" type="submit">
 										<i class="fa fa-save"></i>
 										Yadda saxla
-									</div>
+									</button>
 								</div>
 							</form>
 						</div>

@@ -9,6 +9,7 @@ class AdminController extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->model('category');
+        $this->load->model('page');
         $this->load->library('session');
     }
 
@@ -44,7 +45,16 @@ class AdminController extends CI_Controller
     {
         // check if authenticated user or not
         $this->isAuthenticated();
-        $this->load->view('admin/pages/pages_view', array());
+
+        if (!empty($_POST['title']) && !empty($_POST['description'])) {
+            $data['title'] = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
+            $data['description'] = filter_var($_POST['description'], FILTER_SANITIZE_STRING);
+            $this->page->change($data, 'about');
+            redirect(base_url(). 'xadmin/pages');
+        }
+
+        $context['pageInfo'] = $this->page->getPageBySlug('about');
+        $this->load->view('admin/pages/pages_view', $context);
     }
     public function categories()
     {
@@ -53,10 +63,30 @@ class AdminController extends CI_Controller
         if (!empty($_POST['name'])) {
             $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
             $this->category->add(array('name' => $name));
-            redirect('/xadmin/categories');
+            redirect(base_url() . 'xadmin/categories');
         }
         $context['categories'] = $this->category->getCategories();
+        $context['categoryInfo']['name'] = '';
         $this->load->view('admin/pages/categories_view', $context);
+    }
+    public function changeCategory($categoryId = 0)
+    {
+        $context['categories'] = $this->category->getCategories();
+        $context['categoryInfo'] = current($this->category->getCategoryById($categoryId));
+        if (!empty($_POST['name'])) {
+            $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+            $this->category->change(array('name' => $name), $categoryId);
+            redirect(base_url() . 'xadmin/categories');
+        }
+        $this->load->view('admin/pages/categories_view', $context);
+        // redirect(base_url() . 'xadmin/categories');
+    }
+    public function removeCategory($categoryId = 0)
+    {
+        if ($categoryId > 0) {
+            $this->category->remove($categoryId);
+            redirect(base_url() . 'xadmin/categories');
+        }
     }
     public function products()
     {

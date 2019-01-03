@@ -65,5 +65,7 @@ $route['xadmin/signout'] = 'AdminController/signout';
 $route['xadmin/home'] = 'AdminController/home';
 $route['xadmin/pages'] = 'AdminController/pages';
 $route['xadmin/categories'] = 'AdminController/categories';
+$route['xadmin/categories/(:num)/remove'] = 'AdminController/removeCategory/$1';
+$route['xadmin/categories/(:num)/edit'] = 'AdminController/changeCategory/$1';
 $route['xadmin/products'] = 'AdminController/products';
 $route['xadmin/products/add'] = 'AdminController/productsAdd';

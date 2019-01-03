@@ -13,4 +13,12 @@ class Page extends CI_Model
         
         return $query->result();
     }
+
+    public function change($data=array(), $slug)
+    {
+        $this->db->set('title', $data['title']);
+        $this->db->set('description', $data['description']);
+        $this->db->where('slug', $slug);
+        return $this->db->update('pages');
+    }
 }
