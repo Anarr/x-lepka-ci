@@ -36,9 +36,9 @@
 											</a>
 										</td>
 										<td>
-											<a href="<?=base_url() . 'xadmin/categories/'.$category->id.'/remove';?>" class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = '?delete-id=<?=$index?>'}">
+											<button class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = '<?=base_url() . 'xadmin/categories/'.$category->id.'/remove';?>'}">
 												Sil
-											</a>
+											</button>
 										</td>
 									</tr>
 								<?php endforeach;?>
