@@ -21,6 +21,8 @@
 									<tr>
 										<th>#</th>
 										<th>Kateqoriya Adı</th>
+										<th>Kateqoriyanı Dəyiş</th>
+										<th>Kateqoriyanı sil</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -28,6 +30,18 @@
 									<tr>
 										<td><?=++$index;?></td>
 										<td><?=$category->name;?></td>
+										<td>
+											<form action="?<?=$index?>" method="GET">
+												<button class="btn btn-primary">
+													Dəyiş
+												</button>
+											</form>
+										</td>
+										<td>
+											<button class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = '?delete-id=<?=$index?>'}">
+												Sil
+											</button>
+										</td>
 									</tr>
 								<?php endforeach;?>
 								</tbody>

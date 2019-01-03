@@ -66,3 +66,4 @@ $route['xadmin/home'] = 'AdminController/home';
 $route['xadmin/pages'] = 'AdminController/pages';
 $route['xadmin/categories'] = 'AdminController/categories';
 $route['xadmin/products'] = 'AdminController/products';
+$route['xadmin/products/add'] = 'AdminController/productsAdd';
