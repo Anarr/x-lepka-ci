@@ -104,7 +104,6 @@ class AdminController extends CI_Controller
         // $this->isAuthenticated();
         $this->load->view('admin/pages/products_add_view', array());
     }
-<<<<<<< HEAD
 
     public function changeProduct($productId = 0)
     {
@@ -118,14 +117,13 @@ class AdminController extends CI_Controller
         }
     }
 
-=======
     public function productsEdit()
     {
         // check if authenticated user or not
         // $this->isAuthenticated();
         $this->load->view('admin/pages/products_edit_view', array());
     }
->>>>>>> 059f7c306054528f6e6def68bcab69e5c7578e4d
+
     private function isAuthenticated()
     {
         if (!$this->session->userdata('isLoggedIn')) {
