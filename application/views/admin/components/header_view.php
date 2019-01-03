@@ -52,7 +52,7 @@
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hesab <b class="caret"></b></a>
                                     <ul class="dropdown-menu animated fadeInUp">
-                                        <li><a href="login.html">Çıxış</a></li>
+                                        <li><a href="<?=base_url().'xadmin/signout'?>">Çıxış</a></li>
                                     </ul>
                                 </li>
                             </ul>

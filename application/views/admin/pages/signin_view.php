@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bootstrap Admin Theme v3</title>
+    <title>Xudafərin Lepka</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="<?=base_url();?>assets/admin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,11 +36,13 @@
 			        <div class="box">
 			            <div class="content-wrap">
 			                <h6>Admin Panel</h6>
-			                <input class="form-control" type="text" placeholder="E-mail">
-			                <input class="form-control" type="password" placeholder="Şifrə">
-			                <div class="action">
-			                    <a class="btn btn-primary signup" href="index.html">Daxil ol</a>
-			                </div>                
+							<form method="post">
+								<input class="form-control" name="email" type="text" placeholder="E-mail">
+								<input class="form-control" name="password" type="password" placeholder="Şifrə">
+								<div class="action">
+									<button class="btn btn-primary signup" type="submit">Daxil ol</button>
+								</div>    
+							</form>            
 			            </div>
 			        </div>
 			    </div>

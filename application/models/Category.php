@@ -19,4 +19,8 @@ class Category extends CI_Model
         return $query->result();
     }
 
+    public function add($data=array())
+    {
+        return $this->db->insert('categories', $data);
+    }
 }
