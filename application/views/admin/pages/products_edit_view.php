@@ -14,8 +14,15 @@
 								<h4>Kateqoriya seç</h4>
 								<p>
 									<select class="selectpicker">
-										<option>TV</option>
-										<option>Lepka</option>
+									<?php foreach($categories as $category):?>
+										<?php
+											$selected = '';
+											if ($product->category_id == $category->id) {
+												$selected = 'selected';
+											}
+										?>
+										<option value="<?=$category->id;?>" <?=$selected;?>><?=$category->name;?></option>
+									<?php endforeach;?>									
 									</select>
 								</p>
 							</div>

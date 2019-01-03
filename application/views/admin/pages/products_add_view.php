@@ -6,16 +6,17 @@
 			<?php $this->load->view('admin/components/left_view');?>
 		</div>
 		<div class="col-md-10">
-			<form action="">
+			<form action="" method="post">
 				<div class="row">
 					<div class="col-md-12">
 						<fieldset>
 							<div>
 								<h4>Kateqoriya seç</h4>
 								<p>
-									<select class="selectpicker">
-										<option>TV</option>
-										<option>Lepka</option>
+								<select class="selectpicker" name="category_id">
+									<?php foreach($categories as $category):?>
+										<option value="<?=$category->id;?>"><?=$category->name;?></option>
+									<?php endforeach;?>									
 									</select>
 								</p>
 							</div>
@@ -26,7 +27,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="text-field">Məhsul adı</label>
 								<div class="col-md-10">
-									<input class="form-control" placeholder="Məhsul adı" type="text">
+									<input class="form-control" placeholder="Məhsul adı" type="text" name="title">
 								</div>
 							</div>
 						</div>
@@ -41,7 +42,7 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="input-group">
-													<input type="file" class="btn btn-default" id="exampleInputFile1">
+													<input type="file" class="btn btn-default" id="exampleInputFile1" name="photo">
 													<p class="help-block">
 														məhsul şəkili seçin.
 													</p>
@@ -63,7 +64,7 @@
 										<div class="col-sm-12">
 											<div class="input-group">
 												<span class="input-group-addon">AZN</span>
-												<input class="form-control" id="appendprepend" type="text">
+												<input class="form-control" id="appendprepend" type="text" name="price">
 												<span class="input-group-addon">.00</span>
 											</div>
 										</div>
@@ -90,7 +91,7 @@
 								<label class="col-md-2 control-label">Əsas Sehifədə görünsün</label>
 								<div class="col-md-10">
 									<label class="checkbox-inline">
-										<input type="checkbox">
+										<input type="checkbox" name="show_home_page">
 										İşarələ
 									</label>
 								</div>

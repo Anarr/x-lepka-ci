@@ -101,13 +101,16 @@ class AdminController extends CI_Controller
     public function productsAdd()
     {
         // check if authenticated user or not
-        // $this->isAuthenticated();
-        $this->load->view('admin/pages/products_add_view', array());
-    }
+        $this->isAuthenticated();
+        $context['categories'] = $this->category->getCategories();
+        $this->load->view('admin/pages/products_add_view', $context);
+    }   
 
     public function changeProduct($productId = 0)
     {
-        echo $productId;
+        $context['product'] = current($this->product->getAllProducts($productId));
+        $context['categories'] = $this->category->getCategories();
+        $this->load->view('admin/pages/products_edit_view', $context);
     }
     public function removeProduct($productId = 0)
     {
@@ -115,13 +118,6 @@ class AdminController extends CI_Controller
             $this->product->remove($productId);
             redirect(base_url() . 'xadmin/products');
         }
-    }
-
-    public function productsEdit()
-    {
-        // check if authenticated user or not
-        // $this->isAuthenticated();
-        $this->load->view('admin/pages/products_edit_view', array());
     }
 
     private function isAuthenticated()

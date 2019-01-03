@@ -62,7 +62,7 @@ $route['category/(:num)'] = 'welcome/category/$1';
 
 $route['xadmin'] = 'AdminController/signin';
 $route['xadmin/signout'] = 'AdminController/signout';
-$route['xadmin/home'] = 'AdminController/home';
+$route['xadmin/home'] = 'AdminController/pages';
 $route['xadmin/pages'] = 'AdminController/pages';
 $route['xadmin/categories'] = 'AdminController/categories';
 $route['xadmin/categories/(:num)/remove'] = 'AdminController/removeCategory/$1';
