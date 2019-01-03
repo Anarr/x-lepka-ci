@@ -28,21 +28,23 @@
 									</tr>
 								</thead>
 								<tbody>
+								<?php foreach($products as $index => $product):?>
 									<tr>
-										<td>1</td>
-										<td>Mark</td>
-										<td>TV</td>
+										<td><?=++$index;?></td>
+										<td><?=$product->title?></td>
+										<td><?=$product->name;?></td>
 										<td>
-											<a href="#" class="btn btn-primary">
+											<a href="<?=base_url() . 'xadmin/products/'.$product->id.'/edit';?>" class="btn btn-primary">
 												Dəyiş
 											</a>
 										</td>
 										<td>
-											<button class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = ''}">
+											<a href="<?=base_url() . 'xadmin/products/'.$product->id.'/remove';?>"class="btn btn-danger" onclick="if(confirm('Kateqoriya və məhsulları silinsin?')){window.location = ''}">
 												Sil
-											</button>
+											</a>
 										</td>
 									</tr>
+								<?php endforeach;?>
 								</tbody>
 								</table>
 							</div>

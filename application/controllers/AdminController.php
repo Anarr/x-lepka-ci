@@ -9,6 +9,7 @@ class AdminController extends CI_Controller
         $this->load->helper('url');
         $this->load->helper('form');
         $this->load->model('category');
+        $this->load->model('product');
         $this->load->model('page');
         $this->load->library('session');
     }
@@ -93,8 +94,9 @@ class AdminController extends CI_Controller
     public function products()
     {
         // check if authenticated user or not
-        // $this->isAuthenticated();
-        $this->load->view('admin/pages/products_view', array());
+        $this->isAuthenticated();
+        $context['products'] = $this->product->getAllProducts();
+        $this->load->view('admin/pages/products_view', $context);
     }
     public function productsAdd()
     {
