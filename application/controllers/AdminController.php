@@ -97,10 +97,15 @@ class AdminController extends CI_Controller
     public function productsAdd()
     {
         // check if authenticated user or not
-        $this->isAuthenticated();
+        // $this->isAuthenticated();
         $this->load->view('admin/pages/products_add_view', array());
     }
-
+    public function productsEdit()
+    {
+        // check if authenticated user or not
+        // $this->isAuthenticated();
+        $this->load->view('admin/pages/products_edit_view', array());
+    }
     private function isAuthenticated()
     {
         if (!$this->session->userdata('isLoggedIn')) {
