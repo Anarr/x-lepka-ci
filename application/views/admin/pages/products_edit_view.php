@@ -33,6 +33,12 @@
 					</div>
 					<br>
 					<div class="row">
+						<div class="col-md-6" style="text-align: center;">
+							<img src="/assets/img/part2.jpg" alt="xudaferin lepka product" style="height:150px;">
+						</div>
+					</div>
+					<br>
+					<div class="row">
 						<div class="col-md-6">
 							<!-- <fieldset> -->
 								<div class="form-group">

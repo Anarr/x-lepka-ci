@@ -71,3 +71,4 @@ $route['xadmin/products'] = 'AdminController/products';
 $route['xadmin/products/add'] = 'AdminController/productsAdd';
 $route['xadmin/products/(:num)/remove'] = 'AdminController/removeProduct/$1';
 $route['xadmin/products/(:num)/edit'] = 'AdminController/changeProduct/$1';
+$route['xadmin/products/edit'] = 'AdminController/productsEdit';
