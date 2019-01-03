@@ -69,6 +69,7 @@ class AdminController extends CI_Controller
         $context['categoryInfo']['name'] = '';
         $this->load->view('admin/pages/categories_view', $context);
     }
+
     public function changeCategory($categoryId = 0)
     {
         $context['categories'] = $this->category->getCategories();
@@ -88,6 +89,7 @@ class AdminController extends CI_Controller
             redirect(base_url() . 'xadmin/categories');
         }
     }
+
     public function products()
     {
         // check if authenticated user or not
@@ -99,6 +101,18 @@ class AdminController extends CI_Controller
         // check if authenticated user or not
         $this->isAuthenticated();
         $this->load->view('admin/pages/products_add_view', array());
+    }
+
+    public function changeProduct($productId = 0)
+    {
+        echo $productId;
+    }
+    public function removeProduct($productId = 0)
+    {
+        if ($productId > 0) {
+            $this->product->remove($productId);
+            redirect(base_url() . 'xadmin/products');
+        }
     }
 
     private function isAuthenticated()

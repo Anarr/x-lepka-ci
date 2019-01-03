@@ -21,4 +21,9 @@ class Product extends CI_Model
         return $query->result();
     }
 
+    public function remove($productId)
+    {
+        $this->db->where('id', $productId);
+        $this->db->delete(array('products'));
+    }
 }
