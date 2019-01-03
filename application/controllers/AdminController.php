@@ -22,7 +22,7 @@ class AdminController extends CI_Controller
                 $this->session->set_userdata(array('isLoggedIn' => TRUE));
                 redirect(base_url() . 'xadmin/home');
             } else{
-                echo "<p>>Invalid email or password</p>";
+                echo "<p style='text-align: center;margin:0;'>Invalid email or password</p>";
             }
         }
         $this->load->view('admin/pages/signin_view', array());
