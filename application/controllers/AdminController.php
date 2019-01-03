@@ -43,13 +43,13 @@ class AdminController extends CI_Controller
     public function pages()
     {
         // check if authenticated user or not
-        $this->isAuthenticated();
+        // $this->isAuthenticated();
         $this->load->view('admin/pages/pages_view', array());
     }
     public function categories()
     {
         // check if authenticated user or not
-        $this->isAuthenticated();
+        // $this->isAuthenticated();
         if (!empty($_POST['name'])) {
             $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
             $this->category->add(array('name' => $name));
@@ -61,8 +61,14 @@ class AdminController extends CI_Controller
     public function products()
     {
         // check if authenticated user or not
-        $this->isAuthenticated();
+        // $this->isAuthenticated();
         $this->load->view('admin/pages/products_view', array());
+    }
+    public function productsAdd()
+    {
+        // check if authenticated user or not
+        // $this->isAuthenticated();
+        $this->load->view('admin/pages/products_add_view', array());
     }
 
     private function isAuthenticated()
