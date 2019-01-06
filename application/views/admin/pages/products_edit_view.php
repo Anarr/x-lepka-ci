@@ -6,14 +6,15 @@
 			<?php $this->load->view('admin/components/left_view');?>
 		</div>
 		<div class="col-md-10">
-			<form action="">
+		<?php echo validation_errors(); ?>
+			<form action="" method="post" enctype="multipart/form-data">
 				<div class="row">
 					<div class="col-md-12">
 						<fieldset>
 							<div>
 								<h4>Kateqoriya seç</h4>
 								<p>
-									<select class="selectpicker">
+									<select class="selectpicker" name="category_id">
 									<?php foreach($categories as $category):?>
 										<?php
 											$selected = '';
@@ -33,7 +34,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="text-field">Məhsul adı</label>
 								<div class="col-md-10">
-									<input class="form-control" placeholder="Məhsul adı" type="text">
+									<input class="form-control" placeholder="Məhsul adı" type="text" value="<?=$product->title;?>" name="title">
 								</div>
 							</div>
 						</div>
@@ -41,7 +42,7 @@
 					<br>
 					<div class="row">
 						<div class="col-md-6" style="text-align: center;">
-							<img src="/assets/img/part2.jpg" alt="xudaferin lepka product" style="height:150px;">
+							<img src="<?=base_url(). 'uploads/products/'.$product->photo;?>" alt="xudaferin lepka product" style="height:150px;">
 						</div>
 					</div>
 					<br>
@@ -54,7 +55,7 @@
 										<div class="row">
 											<div class="col-sm-12">
 												<div class="input-group">
-													<input type="file" class="btn btn-default" id="exampleInputFile1">
+													<input type="file" class="btn btn-default" id="exampleInputFile1" name="photo">
 													<p class="help-block">
 														məhsul şəkili seçin.
 													</p>
@@ -76,7 +77,7 @@
 										<div class="col-sm-12">
 											<div class="input-group">
 												<span class="input-group-addon">AZN</span>
-												<input class="form-control" id="appendprepend" type="text">
+												<input class="form-control" id="appendprepend" type="text" value="<?=$product->price;?>" name="price">
 												<span class="input-group-addon">.00</span>
 											</div>
 										</div>
@@ -91,7 +92,7 @@
 							<div class="form-group">
 								<label class="col-md-2 control-label" for="textarea">Məhsul haqqında</label>
 								<div class="col-md-10">
-									<textarea class="form-control" placeholder="Məhsul haqqında" rows="4"></textarea>
+									<textarea name="description" class="form-control" placeholder="Məhsul haqqında" rows="4"><?=$product->description;?></textarea>
 								</div>
 							</div>
 						</div>
@@ -103,7 +104,7 @@
 								<label class="col-md-2 control-label">Əsas Sehifədə görünsün</label>
 								<div class="col-md-10">
 									<label class="checkbox-inline">
-										<input type="checkbox">
+										<input type="checkbox" <?=$product->checked;?> name="show_home_page">
 										İşarələ
 									</label>
 								</div>

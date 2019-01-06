@@ -19,11 +19,11 @@ class AdminController extends CI_Controller
         if (!empty($_POST['email']) && !empty($_POST['password'])) {
             $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
             $password = filter_var($_POST['password'], FILTER_SANITIZE_STRING);
-            
+
             if ($email == XEMAIL && $password == XPASS) {
-                $this->session->set_userdata(array('isLoggedIn' => TRUE));
+                $this->session->set_userdata(array('isLoggedIn' => true));
                 redirect(base_url() . 'xadmin/home');
-            } else{
+            } else {
                 echo "<p style='text-align: center;margin:0;'>Invalid email or password</p>";
             }
         }
@@ -51,7 +51,7 @@ class AdminController extends CI_Controller
             $data['title'] = filter_var($_POST['title'], FILTER_SANITIZE_STRING);
             $data['description'] = filter_var($_POST['description'], FILTER_SANITIZE_STRING);
             $this->page->change($data, 'about');
-            redirect(base_url(). 'xadmin/pages');
+            redirect(base_url() . 'xadmin/pages');
         }
 
         $context['pageInfo'] = $this->page->getPageBySlug('about');
@@ -102,13 +102,104 @@ class AdminController extends CI_Controller
     {
         // check if authenticated user or not
         $this->isAuthenticated();
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $this->load->library('form_validation');
+            // Set form validation rules
+            $this->form_validation->set_rules('category_id', 'Category_id', 'required');
+            $this->form_validation->set_rules('title', 'Title', 'required|min_length[3]');
+            $this->form_validation->set_rules('description', 'Description', 'required|min_length[10]');
+            $this->form_validation->set_rules('price', 'Price', 'required');
+            if (empty($_FILES['photo']['name']))
+            {
+                $this->form_validation->set_rules('photo', 'Photo', 'required');
+            }
+            if ($this->form_validation->run()) {
+
+                $config['upload_path']          = __DIR__ . '/../../uploads/products/';
+                $config['allowed_types']        = 'gif|jpg|png|jpeg';
+                $config['max_size']             = 10000;
+                // $config['max_width']            = 2048;
+                // $config['max_height']           = 1536;
+                $this->load->library('upload', $config);
+                
+                $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
+                
+                if ( ! $this->upload->do_upload('photo'))
+                {
+                    $error = array('error' => $this->upload->display_errors());
+                    print_r($error);exit;
+                }
+                else
+                {
+                    $data = array('upload_data' => $this->upload->data());
+                }
+                
+                $data = array(
+                    'category_id' => $this->input->post('category_id'),
+                    'title' => $this->input->post('title'),
+                    'price' => floatval($this->input->post('price')),
+                    'photo' => $_FILES['photo']['name'],
+                    'description' => $this->input->post('description'),
+                    'show_home_page' => $showHomePage
+                );
+                // $this->upload->do_upload('photo');
+                $this->product->add($data);
+                redirect(base_url() . 'xadmin/products');
+            }
+        }
         $context['categories'] = $this->category->getCategories();
         $this->load->view('admin/pages/products_add_view', $context);
-    }   
+    }
 
     public function changeProduct($productId = 0)
     {
-        $context['product'] = current($this->product->getAllProducts($productId));
+        $productInfo = current($this->product->getAllProducts($productId));
+        $productInfo->checked = ($productInfo->show_home_page == 1) ? 'checked' : '';
+
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $this->load->library('form_validation');
+            // Set form validation rules
+            $this->form_validation->set_rules('category_id', 'Category_id', 'required');
+            $this->form_validation->set_rules('title', 'Title', 'required|min_length[3]');
+            $this->form_validation->set_rules('description', 'Description', 'required|min_length[10]');
+            $this->form_validation->set_rules('price', 'Price', 'required');
+            if ($this->form_validation->run()) {
+                $config['upload_path']          = __DIR__ . '/../../uploads/products/';
+                $config['allowed_types']        = 'gif|jpg|png|jpeg';
+                $config['max_size']             = 10000;
+                // $config['max_width']            = 2048;
+                // $config['max_height']           = 1536;
+                $this->load->library('upload', $config);
+                
+                $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
+                $fileName = $productInfo->photo;
+                if (isset($_FILES['photo']['name'])){
+                    if ( ! $this->upload->do_upload('photo'))
+                    {
+                        $error = array('error' => $this->upload->display_errors());
+                    }
+                    else
+                    {
+                        $fileName = $_FILES['photo']['name'];
+                        $data = array('upload_data' => $this->upload->data());
+                    }
+                }
+
+                
+                $data = array(
+                    'category_id' => $this->input->post('category_id'),
+                    'title' => $this->input->post('title'),
+                    'price' => floatval($this->input->post('price')),
+                    'photo' => $fileName,
+                    'description' => $this->input->post('description'),
+                    'show_home_page' => $showHomePage
+                );
+                $this->product->change($data, $productId);
+                redirect(base_url() . 'xadmin/products/'.$productId.'/edit');
+            }
+        }
+
+        $context['product'] = $productInfo;
         $context['categories'] = $this->category->getCategories();
         $this->load->view('admin/pages/products_edit_view', $context);
     }
@@ -123,7 +214,7 @@ class AdminController extends CI_Controller
     private function isAuthenticated()
     {
         if (!$this->session->userdata('isLoggedIn')) {
-            redirect(base_url() .'xadmin');
+            redirect(base_url() . 'xadmin');
         }
     }
 }

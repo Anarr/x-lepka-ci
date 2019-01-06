@@ -38,4 +38,20 @@ class Product extends CI_Model
         $this->db->where('id', $productId);
         $this->db->delete(array('products'));
     }
+
+    public function add($data=array())
+    {
+        return $this->db->insert('products', $data);
+    }
+
+    public function change($data=array(), $productId)
+    {
+        $this->db->set('title', $data['title']);
+        $this->db->set('description', $data['description']);
+        $this->db->set('photo', $data['photo']);
+        $this->db->set('price', $data['price']);
+        $this->db->set('show_home_page', $data['show_home_page']);
+        $this->db->where('id', $productId);
+        return $this->db->update('products');
+    }
 }
