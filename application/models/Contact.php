@@ -7,6 +7,12 @@ class Contact extends CI_Model
         parent::__construct();
     }
 
+    public function getMessages()
+    {
+        $query = $this->db->get('contact');
+        return $query->result();
+    }
+
     public function send($data)
     {
         $this->db->insert('contact', $data);

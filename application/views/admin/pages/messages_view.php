@@ -27,16 +27,16 @@
 										</tr>
 									</thead>
 									<tbody>
+									<?php foreach($messages as $key => $message):?>
 										<tr>
-											<td>1</td>
-											<td>Mahmud</td>
-											<td>Pirmemmedov</td>
+											<td><?=++$key;?></td>
+											<td><?=$message->name;?></td>
+											<td><?=$message->name;?></td>
 											<td style="max-width: 400px;">
-												<p style="height: 100px;max-width: 400px; overflow-y: scroll;padding:5px 10px;">
-													Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id culpa vel accusamus veniam sint reprehenderit iste optio quas ab quo laudantium ipsum quae adipisci blanditiis dicta reiciendis corrupti, asperiores iure!
-												</p>
+												<p style="height: 100px;max-width: 400px; overflow-y: scroll;padding:5px 10px;"><?=$message->message;?></p>
 											</td>
 										</tr>
+									<?php endforeach;?>
 									</tbody>
 								</table>
 							</div>

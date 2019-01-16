@@ -47,6 +47,7 @@ class Product extends CI_Model
     public function change($data=array(), $productId)
     {
         $this->db->set('title', $data['title']);
+        $this->db->set('category_id', $data['category_id']);
         $this->db->set('description', $data['description']);
         $this->db->set('photo', $data['photo']);
         $this->db->set('price', $data['price']);
