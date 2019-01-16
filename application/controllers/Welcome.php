@@ -70,7 +70,7 @@ class Welcome extends CI_Controller
             $data = array(
                 'name' => $this->input->post('name'),
                 'phone' => $this->input->post('phone'),
-                'message' => $this->input->post('message')
+                'message' => strip_tags($this->input->post('message'))
             );
             $messageId = $this->contact->send($data);
             if ($messageId) {
