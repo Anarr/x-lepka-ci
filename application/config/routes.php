@@ -68,6 +68,7 @@ $route['xadmin/categories'] = 'AdminController/categories';
 $route['xadmin/categories/(:num)/remove'] = 'AdminController/removeCategory/$1';
 $route['xadmin/categories/(:num)/edit'] = 'AdminController/changeCategory/$1';
 $route['xadmin/products'] = 'AdminController/products';
+$route['xadmin/messages'] = 'AdminController/messages';
 $route['xadmin/products/add'] = 'AdminController/productsAdd';
 $route['xadmin/products/(:num)/remove'] = 'AdminController/removeProduct/$1';
 $route['xadmin/products/(:num)/edit'] = 'AdminController/changeProduct/$1';

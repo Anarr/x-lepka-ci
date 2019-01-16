@@ -98,6 +98,14 @@ class AdminController extends CI_Controller
         $context['products'] = $this->product->getAllProducts();
         $this->load->view('admin/pages/products_view', $context);
     }
+
+    public function messages()
+    {
+        // check if authenticated user or not
+        $this->isAuthenticated();
+        $context['products'] = $this->product->getAllProducts();
+        $this->load->view('admin/pages/messages_view', $context);
+    }
     public function productsAdd()
     {
         // check if authenticated user or not
