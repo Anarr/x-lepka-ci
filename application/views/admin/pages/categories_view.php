@@ -31,7 +31,7 @@
 										<td><?=++$index;?></td>
 										<td><?=$category->name;?></td>
 										<td>
-											<a href="<?=base_url() . 'xadmin/categories/'.$category->id.'/edit';?>" class="btn btn-primary">
+											<a href="<?=base_url() . 'xadmin/categories/'.$category->id.'/edit#edit';?>" class="btn btn-primary">
 												Dəyiş
 											</a>
 										</td>
@@ -63,10 +63,14 @@
 							<fieldset>
 								<div class="form-group col-sm-6">
 									<label class="sr-only" for="exampleInputEmail2"></label>
-									<input name="name" class="form-control" id="exampleInputEmail2" placeholder="Kateqoriya Adı" value="<?=$categoryInfo['name'];?>">
+									<input name="name" class="form-control" id="edit" placeholder="Kateqoriya Adı" value="<?=$categoryInfo['name'];?>">
 								</div>
 								<button type="submit" class="btn btn-primary">
-									Əlavə et
+								<?php if(isset($categoryInfo['id'])):?>
+								Dəyiş
+								<?php else:?>
+								Əlavə et
+								<?php endif;?>
 								</button>
 							</fieldset>
 
