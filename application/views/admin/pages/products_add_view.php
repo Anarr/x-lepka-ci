@@ -102,6 +102,24 @@
 					<hr>
 					<div class="row">
 						<div class="col-md-6">
+							<div class="form-group">
+								<label class="col-md-2 control-label">Hal hazırda:</label>
+								<div class="col-md-10">
+									<label class="checkbox-inline">
+										<input type="radio" name="in_stock" value="0">
+										Anbarda
+									</label>
+									<label class="checkbox-inline">
+										<input type="radio" name="in_stock" value="1">
+										Sifarişlə
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-md-6">
 							<div class="form-actions">
 								<!-- <div class="row"> -->
 									<div class="col-md-12">

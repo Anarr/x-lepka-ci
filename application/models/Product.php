@@ -16,7 +16,7 @@ class Product extends CI_Model
 
     public function getAllProducts($productId = 0)
     {
-        $this->db->select('p.id, p.title, p.description, p.photo, p.price, p.category_id, p.show_home_page, c.name');
+        $this->db->select('p.id, p.title, p.description, p.photo, p.price, p.category_id, p.show_home_page,p.in_stock, c.name');
         $this->db->from('products as p');
         $this->db->join('categories as c', 'p.category_id = c.id');
         if ($productId > 0) {
@@ -52,6 +52,7 @@ class Product extends CI_Model
         $this->db->set('photo', $data['photo']);
         $this->db->set('price', $data['price']);
         $this->db->set('show_home_page', $data['show_home_page']);
+        $this->db->set('in_stock', intval($data['in_stock']));
         $this->db->where('id', $productId);
         return $this->db->update('products');
     }

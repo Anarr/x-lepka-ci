@@ -150,7 +150,8 @@ class AdminController extends CI_Controller
                     'price' => floatval($this->input->post('price')),
                     'photo' => $_FILES['photo']['name'],
                     'description' => $this->input->post('description'),
-                    'show_home_page' => $showHomePage
+                    'show_home_page' => $showHomePage,
+                    'in_stock' => $this->input->post('in_stock')
                 );
                 // $this->upload->do_upload('photo');
                 $this->product->add($data);
@@ -167,6 +168,7 @@ class AdminController extends CI_Controller
         $productInfo->checked = ($productInfo->show_home_page == 1) ? 'checked' : '';
 
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            // print_r($_POST);exit;
             $this->load->library('form_validation');
             // Set form validation rules
             $this->form_validation->set_rules('category_id', 'Category_id', 'required');
@@ -202,7 +204,8 @@ class AdminController extends CI_Controller
                     'price' => floatval($this->input->post('price')),
                     'photo' => $fileName,
                     'description' => $this->input->post('description'),
-                    'show_home_page' => $showHomePage
+                    'show_home_page' => $showHomePage,
+                    'in_stock' => $this->input->post('in_stock'),
                 );
                 $this->product->change($data, $productId);
                 redirect(base_url() . 'xadmin/products/'.$productId.'/edit');

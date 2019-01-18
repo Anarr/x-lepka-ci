@@ -36,10 +36,16 @@
 
                 <div class="col-sm-6 product-right">
                     <h3 class="product-title"><?=$productData->title;?></h3>
-
+                    
                     <ul class="list-unstyled attr">
                         <li><span>Haqqında:</span> <?=$productData->description;?></li>
-                        <li><span>Mövcudluq:</span> Anbarda</li>
+                        <li><span>Mövcudluq:</span>
+                            <?php if($productData->in_stock == 0):?>
+                                Anbarda
+                            <?php else:?>
+                                Sifarişlə
+                            <?php endif;?>
+                        </li>
                     </ul>
                     <ul class="list-unstyled price">
                         <li>
