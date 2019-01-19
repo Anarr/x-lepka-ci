@@ -133,7 +133,16 @@ class AdminController extends CI_Controller
                 $this->load->library('upload', $config);
                 
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
-                
+
+                $mimeType = mime_content_type($_FILES['photo']['tmp_name']);
+                $fileExt = 'jpg';
+                if ($mimeType) {
+                    list($_not, $fileExt) = explode('/', $mimeType);
+                }
+
+                $config['file_name'] = time().'.'.$fileExt;
+                $_FILES['photo']['name'] = $config['file_name'];
+
                 if ( ! $this->upload->do_upload('photo'))
                 {
                     $error = array('error' => $this->upload->display_errors());
@@ -148,7 +157,7 @@ class AdminController extends CI_Controller
                     'category_id' => $this->input->post('category_id'),
                     'title' => $this->input->post('title'),
                     'price' => floatval($this->input->post('price')),
-                    'photo' => $_FILES['photo']['name'],
+                    'photo' => $config['file_name'],
                     'description' => $this->input->post('description'),
                     'show_home_page' => $showHomePage,
                     'in_stock' => $this->input->post('in_stock')
@@ -181,28 +190,38 @@ class AdminController extends CI_Controller
                 $config['max_size']             = 10000;
                 // $config['max_width']            = 2048;
                 // $config['max_height']           = 1536;
+                
                 $this->load->library('upload', $config);
                 
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
                 $fileName = $productInfo->photo;
+                $config['file_name'] = $fileName;
                 if (isset($_FILES['photo']['name'])){
+                    $mimeType = mime_content_type($_FILES['photo']['tmp_name']);
+                    $fileExt = 'jpg';
+                    if ($mimeType) {
+                        list($_not, $fileExt) = explode('/', $mimeType);
+                    }
+
+                    $config['file_name'] = time().'.'.$fileExt;
+                    $_FILES['photo']['name'] = $config['file_name'];
                     if ( ! $this->upload->do_upload('photo'))
                     {
                         $error = array('error' => $this->upload->display_errors());
                     }
                     else
                     {
-                        $fileName = $_FILES['photo']['name'];
+                        $fileName = trim($_FILES['photo']['name']);
                         $data = array('upload_data' => $this->upload->data());
                     }
                 }
+                // print_r($config);exit;
 
-                
                 $data = array(
                     'category_id' => $this->input->post('category_id'),
                     'title' => $this->input->post('title'),
                     'price' => floatval($this->input->post('price')),
-                    'photo' => $fileName,
+                    'photo' => $config['file_name'],
                     'description' => $this->input->post('description'),
                     'show_home_page' => $showHomePage,
                     'in_stock' => $this->input->post('in_stock'),
