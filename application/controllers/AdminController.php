@@ -131,13 +131,14 @@ class AdminController extends CI_Controller
                 // $config['max_width']            = 2048;
                 // $config['max_height']           = 1536;
                 $this->load->library('upload', $config);
-                
+                // print_r($_FILES);exit;
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
-
-                $mimeType = mime_content_type($_FILES['photo']['tmp_name']);
                 $fileExt = 'jpg';
-                if ($mimeType) {
-                    list($_not, $fileExt) = explode('/', $mimeType);
+                if (isset($_FILES['photo']['name'])){
+                    $mimeType = $_FILES['photo']['type'];
+                    if ($mimeType) {
+                        list($_not, $fileExt) = explode('/', $mimeType);
+                    }
                 }
 
                 $config['file_name'] = time().'.'.$fileExt;
@@ -146,7 +147,6 @@ class AdminController extends CI_Controller
                 if ( ! $this->upload->do_upload('photo'))
                 {
                     $error = array('error' => $this->upload->display_errors());
-                    print_r($error);exit;
                 }
                 else
                 {
@@ -196,8 +196,8 @@ class AdminController extends CI_Controller
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
                 $fileName = $productInfo->photo;
                 $config['file_name'] = $fileName;
-                if (isset($_FILES['photo']['name'])){
-                    $mimeType = mime_content_type($_FILES['photo']['tmp_name']);
+                if (!empty($_FILES['photo']['name'])){
+                    $mimeType = $_FILES['photo']['type'];
                     $fileExt = 'jpg';
                     if ($mimeType) {
                         list($_not, $fileExt) = explode('/', $mimeType);
@@ -211,9 +211,11 @@ class AdminController extends CI_Controller
                     }
                     else
                     {
-                        $fileName = trim($_FILES['photo']['name']);
                         $data = array('upload_data' => $this->upload->data());
                     }
+                } else {
+                    $fileName = $productInfo->photo;
+                    $config['file_name'] = $fileName;
                 }
                 // print_r($config);exit;
 
