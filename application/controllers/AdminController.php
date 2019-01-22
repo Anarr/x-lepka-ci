@@ -146,7 +146,7 @@ class AdminController extends CI_Controller
 
                 if ( ! $this->upload->do_upload('photo'))
                 {
-                    $error = array('error' => $this->upload->display_errors());
+                    echo $this->upload->display_errors();exit;  
                 }
                 else
                 {
@@ -207,7 +207,7 @@ class AdminController extends CI_Controller
                     $_FILES['photo']['name'] = $config['file_name'];
                     if ( ! $this->upload->do_upload('photo'))
                     {
-                        $error = array('error' => $this->upload->display_errors());
+                        echo $this->upload->display_errors();exit;
                     }
                     else
                     {
