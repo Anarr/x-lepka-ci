@@ -81,6 +81,7 @@
                                 <li class="facebook"><a href="https://www.facebook.com/xudaferinlepka/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                                 <li class="instagram"><a href="https://www.instagram.com/xudaferin_lepka/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                 <li class="mail"><a href="mailto:xudaferinlepka@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                                <li class="youtube"><a href="https://www.youtube.com/channel/UCtys-wMpJczu-DyNJ1iKFUg/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                     </div>

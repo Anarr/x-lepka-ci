@@ -39,7 +39,7 @@
                             </div>
                             <div class="openingtime">
                                 <strong>&nbsp;</strong>
-                                <address>10:00 - 18:00</address>
+                                <address>09:00 - 19:00 (Hər Gün)</address>
                             </div>
                             <br>
                             <div style="clear:both;">&nbsp;</div>
@@ -47,13 +47,17 @@
                                 <strong>&nbsp;</strong>
                                 <address><a href="tel:+994252155646">(+994 70) 205-90-80</a></address>
                             </div>
+                            <div class="telephone">
+                                <strong>&nbsp;</strong>
+                                <address><a href="tel:+994508734865">(+994 50) 873-48-65</a></address>
+                            </div>
                             <div class="email">
                                 <strong><i class="fa fa-envelope-o"></i></strong>
                                 <address><a href="mailto:xudaferinlepka@gmail.com">xudaferinlepka@gmail.com</a></address>
                             </div>
                             <div class="openingtime">
                                 <strong>&nbsp;</strong>
-                                <address>10:00 - 18:00</address>
+                                <address>09:00 - 19:00 (Hər Gün)</address>
                             </div>
 
                             <div style="clear:both;">&nbsp;</div>
@@ -64,6 +68,8 @@
                                                 aria-hidden="true"></i></a></li>
                                     <li class="instagram"><a href="https://www.instagram.com/xudaferin_lepka/"><i class="fa fa-instagram"
                                                 aria-hidden="true"></i></a></li>
+                                    <li class="youtube"><a href="https://www.youtube.com/channel/UCtys-wMpJczu-DyNJ1iKFUg/"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+
                                 </ul>
                             </div>
 

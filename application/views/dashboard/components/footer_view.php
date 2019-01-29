@@ -38,6 +38,20 @@
                         <li><a href="https://www.facebook.com/xudaferinlepka/" target="_blank">Facebook</a></li>
                         <li><a href="https://www.instagram.com/xudaferin_lepka/" target="_blank">Instagram</a></li>
                     </ul>
+                    <h5 style="float: left;
+                        margin-top: 15px;
+                        width: 200px;
+                        line-height: 20px;"
+                    >
+                        Şikayət və təklifləriniz üçün
+                    </h5>
+                    <div style="float: left;">
+                        <ul style="float: left;" class="list-unstyled">
+                            <li>
+                                <a href="tel:+994502057079">(+994 50) 205-70-79</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div id="extra-link" class="col-sm-3 column">
                     <div class="col-sm-12">
