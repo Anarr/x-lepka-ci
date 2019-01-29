@@ -108,6 +108,12 @@ class AdminController extends CI_Controller
         $this->load->view('admin/pages/messages_view', $context);
     }
 
+    public function removeMessage($messageId)
+    {
+        $this->contact->removeMessage($messageId);
+        redirect(base_url('xadmin/messages'));
+    }
+
     public function productsAdd()
     {
         // check if authenticated user or not
@@ -119,40 +125,36 @@ class AdminController extends CI_Controller
             $this->form_validation->set_rules('title', 'Title', 'required|min_length[3]');
             $this->form_validation->set_rules('description', 'Description', 'required|min_length[10]');
             $this->form_validation->set_rules('price', 'Price', 'required');
-            if (empty($_FILES['photo']['name']))
-            {
+            if (empty($_FILES['photo']['name'])) {
                 $this->form_validation->set_rules('photo', 'Photo', 'required');
             }
             if ($this->form_validation->run()) {
 
-                $config['upload_path']          = __DIR__ . '/../../uploads/products/';
-                $config['allowed_types']        = 'gif|jpg|png|jpeg';
-                $config['max_size']             = 10000;
+                $config['upload_path'] = __DIR__ . '/../../uploads/products/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['max_size'] = 10000;
                 // $config['max_width']            = 2048;
                 // $config['max_height']           = 1536;
                 $this->load->library('upload', $config);
                 // print_r($_FILES);exit;
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
                 $fileExt = 'jpg';
-                if (isset($_FILES['photo']['name'])){
+                if (isset($_FILES['photo']['name'])) {
                     $mimeType = $_FILES['photo']['type'];
                     if ($mimeType) {
                         list($_not, $fileExt) = explode('/', $mimeType);
                     }
                 }
 
-                $config['file_name'] = time().'.'.$fileExt;
+                $config['file_name'] = time() . '.' . $fileExt;
                 $_FILES['photo']['name'] = $config['file_name'];
 
-                if ( ! $this->upload->do_upload('photo'))
-                {
-                    echo $this->upload->display_errors();exit;  
-                }
-                else
-                {
+                if (!$this->upload->do_upload('photo')) {
+                    echo $this->upload->display_errors();exit;
+                } else {
                     $data = array('upload_data' => $this->upload->data());
                 }
-                
+
                 $data = array(
                     'category_id' => $this->input->post('category_id'),
                     'title' => $this->input->post('title'),
@@ -160,7 +162,7 @@ class AdminController extends CI_Controller
                     'photo' => $config['file_name'],
                     'description' => $this->input->post('description'),
                     'show_home_page' => $showHomePage,
-                    'in_stock' => $this->input->post('in_stock')
+                    'in_stock' => $this->input->post('in_stock'),
                 );
                 // $this->upload->do_upload('photo');
                 $this->product->add($data);
@@ -185,32 +187,29 @@ class AdminController extends CI_Controller
             $this->form_validation->set_rules('description', 'Description', 'required|min_length[10]');
             $this->form_validation->set_rules('price', 'Price', 'required');
             if ($this->form_validation->run()) {
-                $config['upload_path']          = __DIR__ . '/../../uploads/products/';
-                $config['allowed_types']        = 'gif|jpg|png|jpeg';
-                $config['max_size']             = 10000;
+                $config['upload_path'] = __DIR__ . '/../../uploads/products/';
+                $config['allowed_types'] = 'gif|jpg|png|jpeg';
+                $config['max_size'] = 10000;
                 // $config['max_width']            = 2048;
                 // $config['max_height']           = 1536;
-                
+
                 $this->load->library('upload', $config);
-                
+
                 $showHomePage = ($this->input->post('show_home_page') == 'on') ? 1 : 0;
                 $fileName = $productInfo->photo;
                 $config['file_name'] = $fileName;
-                if (!empty($_FILES['photo']['name'])){
+                if (!empty($_FILES['photo']['name'])) {
                     $mimeType = $_FILES['photo']['type'];
                     $fileExt = 'jpg';
                     if ($mimeType) {
                         list($_not, $fileExt) = explode('/', $mimeType);
                     }
 
-                    $config['file_name'] = time().'.'.$fileExt;
+                    $config['file_name'] = time() . '.' . $fileExt;
                     $_FILES['photo']['name'] = $config['file_name'];
-                    if ( ! $this->upload->do_upload('photo'))
-                    {
+                    if (!$this->upload->do_upload('photo')) {
                         echo $this->upload->display_errors();exit;
-                    }
-                    else
-                    {
+                    } else {
                         $data = array('upload_data' => $this->upload->data());
                     }
                 } else {
@@ -229,7 +228,7 @@ class AdminController extends CI_Controller
                     'in_stock' => $this->input->post('in_stock'),
                 );
                 $this->product->change($data, $productId);
-                redirect(base_url() . 'xadmin/products/'.$productId.'/edit');
+                redirect(base_url() . 'xadmin/products/' . $productId . '/edit');
             }
         }
 

@@ -138,31 +138,6 @@ class Welcome extends CI_Controller
             'pageData' => $pageData,
             'productData' => $productData[0]
         );
-
-        $this->load->model('contact');
-        $this->load->library('form_validation');
-        // Set form validation rules
-        $this->form_validation->set_rules('name', 'name', 'required');
-        $this->form_validation->set_rules('phone', 'phone', 'required');
-        $this->form_validation->set_rules('message', 'message', 'required|min_length[20]');
-
-        if ($this->form_validation->run()) {
-            $data = array(
-                'name' => $this->input->post('name'),
-                'phone' => $this->input->post('phone'),
-                'message' => strip_tags($this->input->post('message'))
-            );
-            $messageId = $this->contact->send($data);
-            if ($messageId) {
-                redirect('/products/'.$productId);
-            } else {
-                exit('Error occured');
-            }
-        }
-
-
-
-
         $this->load->view('dashboard/pages/product_view', $context);
     }
     
