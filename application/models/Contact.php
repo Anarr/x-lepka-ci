@@ -19,4 +19,10 @@ class Contact extends CI_Model
         
         return $this->db->insert_id();
     }
+
+    public function removeMessage($messageId)
+    {
+        $this->db->where('id', $messageId);
+        return $this->db->delete('contact');
+    }
 }

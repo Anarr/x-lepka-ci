@@ -24,6 +24,7 @@
 											<th>Ad</th>
 											<th>Nömrə</th>
 											<th>Mesaj</th>
+											<th>Sil</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -35,6 +36,7 @@
 											<td style="max-width: 400px;">
 												<p style="height: 100px;max-width: 400px; overflow-y: scroll;padding:5px 10px;"><?=$message->message;?></p>
 											</td>
+											<td><a class="btn btn-danger" href="<?=base_url().'xadmin/messages/'.$message->id.'/remove';?>">Remove</a></td>
 										</tr>
 									<?php endforeach;?>
 									</tbody>
