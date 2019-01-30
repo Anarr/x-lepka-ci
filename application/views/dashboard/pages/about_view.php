@@ -15,7 +15,7 @@
         </aside>
         <div id="content" class="col-sm-9">
             <ul class="breadcrumb">
-                <li><a href="/ci"><i class="fa fa-home"></i></a></li>
+                <li><a href=""><i class="fa fa-home"></i></a></li>
                 <li><a href="#"><?=$pageData->title;?></a></li>
             </ul>
             <h1 class="page-title"><?=$pageData->title;?></h1>

@@ -122,7 +122,7 @@
                             </div>
                             <div class="head-right-top">
                                 <ul class="static_links">
-                                    <li class="head-links"> <a href="/ci">Baş səhifə</a></li>
+                                    <li class="head-links"> <a href="">Baş səhifə</a></li>
                                     <li class="head-links"><a href="<?=base_url();?>ci/category/1">Məhsullar</a></li>
                                     <li class="head-links"><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
                                     <li class="head-links"><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>

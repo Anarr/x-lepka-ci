@@ -173,8 +173,8 @@
                             <div class="product-block-inner">
 
                                 <div class="image">
-                                    <a href="<?=base_url().'ci/products/'.$product->id;?>">
-                                        <img src="<?=base_url().'ci/uploads/products/'.$product->photo;?>" title="<?=$product->title;?>"
+                                    <a href="<?=base_url().'/products/'.$product->id;?>">
+                                        <img src="<?=base_url().'/uploads/products/'.$product->photo;?>" title="<?=$product->title;?>"
                                             alt="<?=$product->title;?>" class="img-responsive">
                                     </a>
 
