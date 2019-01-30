@@ -33,8 +33,8 @@
                 <div id="info" class="col-sm-3 column">
                     <h5 style="padding-left: 15px !important;">Məlumat</h5>
                     <ul class="list-unstyled">
-                        <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
-                        <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
+                        <li><a href="<?=base_url();?>/about">Haqqımızda</a></li>
+                        <li><a href="<?=base_url();?>/contact">Əlaqə</a></li>
                         <li><a href="https://www.facebook.com/xudaferinlepka/" target="_blank">Facebook</a></li>
                         <li><a href="https://www.instagram.com/xudaferin_lepka/" target="_blank">Instagram</a></li>
                             <h4 style="padding-left: 15px !important;">Şikayət və təklifləriniz üçün</h4>

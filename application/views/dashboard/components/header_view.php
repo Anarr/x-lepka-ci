@@ -123,9 +123,9 @@
                             <div class="head-right-top">
                                 <ul class="static_links">
                                     <li class="head-links"> <a href="">Baş səhifə</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>ci/category/1">Məhsullar</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
-                                    <li class="head-links"><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>/category/1">Məhsullar</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>/about">Haqqımızda</a></li>
+                                    <li class="head-links"><a href="<?=base_url();?>/contact">Əlaqə</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                 </div>
                 <ul class="main-navigation">
                     <?php foreach ($categories as $category): ?>
-                    <li class="top_level"><a href="<?=base_url();?>ci/category/<?=$category->id;?>">
+                    <li class="top_level"><a href="<?=base_url();?>/category/<?=$category->id;?>">
                             <?=$category->name;?></a>
                         <?php endforeach;?>
 
