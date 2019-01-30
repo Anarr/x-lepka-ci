@@ -1,4 +1,11 @@
 <?php $this->load->view('dashboard/components/header_view');?>
+<style>
+.nowrap-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+</style>
 <div class="content-top">
     <div class="container">
         <div class="row">
@@ -55,21 +62,21 @@
                 <div class="service">
                     <div class="serviceblock1 serviceblock clearfix">
                         <div class="title">
-                            <div class="title">Pulsuz çatdırılma</div>
-                            <div class="subtitle">bütün məhsullarda</div>
+                            <div class="title nowrap-text">Pulsuz çatdırılma</div>
+                            <div class="subtitle nowrap-text">bütün məhsullarda</div>
                         </div>
                     </div>
                     <div class="serviceblock2 serviceblock clearfix">
-                        <div class="title">Dəyişmək və zəmanət</div>
-                        <div class="subtitle">geri qaytarmaq İmkanı</div>
+                        <div class="title nowrap-text">Dəyişmək və zəmanət</div>
+                        <div class="subtitle nowrap-text">geri qaytarmaq İmkanı</div>
                     </div>
                     <div class="serviceblock3 serviceblock clearfix">
-                        <div class="title">Telefon dəstək xətti</div>
-                        <div class="subtitle">+994 (50) 873-48-65<br></div>
+                        <div class="title nowrap-text">Telefon dəstək xətti</div>
+                        <div class="subtitle nowrap-text">+994 (50) 873-48-65<br></div>
                     </div>
                     <div class="serviceblock4 serviceblock clearfix">
-                        <div class="title">Qapıda ödəmə</div>
-                        <div class="subtitle">nağd şəkildə</div>
+                        <div class="title nowrap-text">Qapıda ödəmə</div>
+                        <div class="subtitle nowrap-text">nağd şəkildə</div>
                     </div>
                 </div>
             </div>

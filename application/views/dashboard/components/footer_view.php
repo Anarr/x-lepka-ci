@@ -6,7 +6,7 @@
                 <div class="col-sm-1">
                 </div>
                 <div id="contact" class="col-sm-3 column">
-                    <h5 class="">Əlaqə</h5>
+                    <h5 class="" style="padding-left: 15px !important;">Əlaqə</h5>
                     <ul>
                         <li>
                             <div class="address_content">
@@ -31,27 +31,18 @@
                     </ul>
                 </div>
                 <div id="info" class="col-sm-3 column">
-                    <h5>Məlumat</h5>
+                    <h5 style="padding-left: 15px !important;">Məlumat</h5>
                     <ul class="list-unstyled">
                         <li><a href="<?=base_url();?>ci/about">Haqqımızda</a></li>
                         <li><a href="<?=base_url();?>ci/contact">Əlaqə</a></li>
                         <li><a href="https://www.facebook.com/xudaferinlepka/" target="_blank">Facebook</a></li>
                         <li><a href="https://www.instagram.com/xudaferin_lepka/" target="_blank">Instagram</a></li>
+                            <h4 style="padding-left: 15px !important;">Şikayət və təklifləriniz üçün</h4>
+                        <li>
+                            <a href="tel:+994502057079">(+994 50) 205-70-79</a>
+                        </li>
                     </ul>
-                    <h5 style="float: left;
-                        margin-top: 15px;
-                        width: 200px;
-                        line-height: 20px;"
-                    >
-                        Şikayət və təklifləriniz üçün
-                    </h5>
-                    <div style="float: left;">
-                        <ul style="float: left;" class="list-unstyled">
-                            <li>
-                                <a href="tel:+994502057079">(+994 50) 205-70-79</a>
-                            </li>
-                        </ul>
-                    </div>
+                    
                 </div>
                 <div id="extra-link" class="col-sm-3 column">
                     <div class="col-sm-12">

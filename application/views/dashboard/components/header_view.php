@@ -99,7 +99,7 @@
                         <div class="header-left">
                             <div class="col-sm-4 header-logo">
                                 <div id="logo">
-                                    <a href="/ci"><img src="<?=base_url()?>assets/img/logo1.png"
+                                    <a href="/"><img src="<?=base_url()?>assets/img/logo1.png"
                                             title="Xudaferin Lepka" alt="Xudaferin Lepka" class="img-responsive" /></a>
                                 </div>
                             </div>
