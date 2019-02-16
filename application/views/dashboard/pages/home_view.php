@@ -220,12 +220,21 @@
                     <a class="next fa"></a>
                 </div>
                 <div class="product-carousel" id="module-0-carousel">
-                        <div class="slider-item">
-                    <div class="product-block">
-                    <div class="product-block-inner">
-                            <img src="<?=base_url()?>assets/img/part1.jpg" alt="Manufacturers" />
-                        </div></div></div>
-                        <div class="slider-item">
+                <div class="slider-item">
+                        <div class="product-block">
+                            <div class="product-block-inner">
+                                <img src="<?=base_url()?>assets/img/part0.jpg" alt="Manufacturers" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="product-block">
+                            <div class="product-block-inner">
+                                <img src="<?=base_url()?>assets/img/part1.jpg" alt="Manufacturers" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-item">
                     <div class="product-block">
                     <div class="product-block-inner">
                             <img src="<?=base_url()?>assets/img/part2.jpg" alt="Manufacturers5" />
