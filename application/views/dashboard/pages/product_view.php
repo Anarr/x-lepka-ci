@@ -25,8 +25,8 @@
                             <!-- Megnor Cloud-Zoom Image Effect Start -->
                             <div class="image"><a class="thumbnail elevatezoom-gallery" href="<?=base_url().'ci/uploads/products/'.$productData->photo;?>"><img
                                         id="tmzoom" src="<?=base_url().'ci/uploads/products/'.$productData->photo;?>"
-                                        data-zoom-image="/image/catalog/belarusiya_yeni/Prestij 2.jpg" title="Prestij2"
-                                        alt="Prestij2"></a></div>
+                                        data-zoom-image="/image/catalog/belarusiya_yeni/Prestij 2.jpg" title="Product"
+                                        alt="Product"></a></div>
 
 
                             <!-- Megnor Cloud-Zoom Image Effect End-->
@@ -55,16 +55,16 @@
 
                     <form action="" method="post" enctype="multipart/form-data">
                         <div class="form-group">
-                            <label class="control-label" for="input-email">Adiniz</label>
+                            <label class="control-label" for="input-email">Adınız</label>
                             <input type="text" name="name" placeholder="Adınız" id="input-email" class="form-control" value="">
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="input-password">Nomre</label>
-                            <input type="tel    " name="phone" value="" placeholder="Nomre" id="input-password" class="form-control">
+                            <label class="control-label" for="input-password">Nomrə</label>
+                            <input type="tel    " name="phone" value="" placeholder="Nomrə" id="input-password" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label class="control-label" for="input-email">Messajiniz</label>
-                            <textarea type="text" name="message" value="" placeholder="Mesajiniz" id="input-email" class="form-control"></textarea>
+                            <label class="control-label" for="input-email">Mesajınız</label>
+                            <textarea type="text" name="message" value="" placeholder="Mesajınız" id="input-email" class="form-control"></textarea>
                         </div>
                         <input type="submit" value="Sifariş ver" class="btn btn-primary">
                         <input type="hidden" name="redirect" value="">
