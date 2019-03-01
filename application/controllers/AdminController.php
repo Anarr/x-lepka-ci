@@ -124,7 +124,7 @@ class AdminController extends CI_Controller
             $this->form_validation->set_rules('category_id', 'Category_id', 'required');
             $this->form_validation->set_rules('title', 'Title', 'required|min_length[3]');
             $this->form_validation->set_rules('description', 'Description', 'required|min_length[10]');
-            $this->form_validation->set_rules('price', 'Price', 'required');
+            // $this->form_validation->set_rules('price', 'Price', 'required');
             if (empty($_FILES['photo']['name'])) {
                 $this->form_validation->set_rules('photo', 'Photo', 'required');
             }
